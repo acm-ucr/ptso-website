@@ -11,7 +11,7 @@
 
 ## Figma
 
-[PTSO Website Figma Design]([https://www.figma.com/](https://www.figma.com/design/NrMlxyTbtkNot15hY4sblz/PTSO?node-id=0-1&p=f&t=0mSa0SlRBCxhy2Rs-0))
+[PTSO Website Figma Design]([https://www.figma.com/](https://www.figma.com/design/NrMlxyTbtkNot15hY4sblz/PTSO?node-id=0-1&p=f&t=0mSa0SlRBCxhy2Rs-0)
 
 ## Node.js
 
