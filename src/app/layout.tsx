@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "UCR Pre-Therapy Student Orginization",
-  description: "Connects, inspires, and brings opportunities to pre-therapy students at UCR",
+  description:
+    "Connects, inspires, and brings opportunities to pre-therapy students at UCR",
 };
 
 type LayoutProps = {
