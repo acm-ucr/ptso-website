@@ -16,6 +16,10 @@ module.exports = {
           "pink-200": "#B06985",
           "pink-300": "#A85173",
         },
+        fontFamily: {
+          ptso: "--be_vietnam_pro-font",
+           
+        },
       },
     },
   },
