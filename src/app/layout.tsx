@@ -33,6 +33,9 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className={beVietnamPro.className}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
+      <body className={quicksand.className}>
+        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+      </body>
     </html>
   );
 }
