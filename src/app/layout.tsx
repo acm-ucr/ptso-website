@@ -3,8 +3,7 @@ import "./globals.css";
 import { Be_Vietnam_Pro, Quicksand } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 
-
-const be_vietnam_pro = Be_Vietnam_Pro({
+const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin"],
   display: "swap",
   weight: ["200", "300", "400", "500", "600", "700"],
@@ -31,7 +30,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={be_vietnam_pro.className}>
+      <body className={beVietnamPro.className}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
