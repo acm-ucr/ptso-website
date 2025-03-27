@@ -18,7 +18,7 @@ const quicksand = Quicksand({
 });
 
 export const metadata = {
-  title: "UCR Pre-Therapy Student Orginization",
+  title: "UCR Pre-Therapy Student Organization",
   description:
     "Connects, inspires, and brings opportunities to pre-therapy students at UCR",
 };
