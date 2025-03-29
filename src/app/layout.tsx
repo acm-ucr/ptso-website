@@ -30,10 +30,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={beVietnamPro.className}>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
-      </body>
-      <body className={quicksand.className}>
+      <body className={`${beVietnamPro.className} ${quicksand.className}`}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
