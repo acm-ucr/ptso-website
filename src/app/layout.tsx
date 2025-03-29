@@ -2,6 +2,8 @@ import "./globals.css";
 
 import { Be_Vietnam_Pro, Quicksand } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -31,7 +33,9 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className={`${beVietnamPro.className} ${quicksand.className}`}>
+        <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );
