@@ -3,6 +3,7 @@ import Description from "@/components/home/Description";
 import OurValues from "@/components/home/OurValues";
 import Instagram from "@/components/home/Instagram";
 import ContactUs from "@/components/home/ContactUs";
+import Example from "@/components/Example";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <OurValues />
       <Instagram />
       <ContactUs />
+      <Example text1="Adjust" text2="These" text3="Props" />
     </div>
   );
 };

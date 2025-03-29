@@ -5,12 +5,15 @@ module.exports = {
     extend: {
       colors: {
         ptso: {
-          "blue-100": "#DAEDFE",
-          "blue-200": "#B6CDE4",
-          "purple-100": "#4545A4",
-          "purple-200": "#7676CC",
-          "pink-100": "#D092AA",
-          "pink-300": "#A85173",
+          "blue-primary": "#DAEDFE",
+          "blue-secondary": "#B6CDE4",
+          "blue-accent": "#80AED9",
+          "purple-primary": "#7676CC",
+          "purple-secondary": "#4545A4",
+          "purple-accent": "#151539",
+          "pink-primary": "#D092AA",
+          "pink-secondary": "#B06985",
+          "pink-accent": "#A85173",
         },
         fontFamily: {
           be_vietnam_pro: "--beVietnamPro-font)",
