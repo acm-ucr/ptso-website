@@ -1,3 +1,16 @@
 @import "tailwindcss";
 
-@config '../../tailwind.config.ts';
+@theme {
+  --color-ptso-blue-primary: #daedfe;
+  --color-ptso-blue-secondary: #b6cde4;
+  --color-ptso-blue-accent: #80aed9;
+  --color-ptso-purple-primary: #7676cc;
+  --color-ptso-purple-secondary: #4545a4;
+  --color-ptso-purple-accent: #151539;
+  --color-ptso-pink-primary: #d092aa;
+  --color-ptso-pink-secondary: #b06985;
+  --color-ptso-pink-accent: #a85173;
+
+  --be_vietnam_pro-font: "Be_Vietnam_Pro";
+  --quicksand-font: "Quicksand";
+}
