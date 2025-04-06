@@ -23,7 +23,7 @@ const average = Average({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],
-  variable: "--quicksand-font",
+  variable: "--average-font",
 });
 
 export const metadata = {
