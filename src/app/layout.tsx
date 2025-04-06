@@ -39,7 +39,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${beVietnamPro.className} ${quicksand.className} ${average.className}`}>
+      <body
+        className={`${beVietnamPro.className} ${quicksand.className} ${average.className}`}
+      >
         <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
         <Footer />
