@@ -1,14 +1,19 @@
-export const navigations = [
+interface navigation {
+  name: string;
+  link: string;
+}
+
+export const navigations: navigation[] = [
   {
     name: "ABOUT",
-    href: "/about",
+    link: "/about",
   },
   {
     name: "BOARD",
-    href: "/board",
+    link: "/board",
   },
   {
     name: "GALLERY",
-    href: "/gallery",
+    link: "/gallery",
   },
 ];
