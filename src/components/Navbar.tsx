@@ -7,12 +7,10 @@ const Navbar = () => {
   return (
     <div className="text-ptso-purple-accent">
       <div className="flex items-center justify-between px-6 py-3">
-        <div className="flex w-1/5 items-center">
-          <Link href="/">
-            <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
-          </Link>
+        <Link href="/" className="flex w-1/5 items-center">
+          <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
           <div className="px-4 text-3xl">PTSO</div>
-        </div>
+        </Link>
         <div className="font-beVietnamPro flex w-1/2 gap-11 text-xl">
           {navigations.map(({ link, name }, index) => (
             <Link href={link} key={index}>
@@ -20,7 +18,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="w-1/4 justify-items-end">JOIN US</div>
+        <div className="w-1/4 text-right">JOIN US</div>
       </div>
     </div>
   );
