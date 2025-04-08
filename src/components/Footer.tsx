@@ -1,51 +1,53 @@
-import { FOOTER } from "@/data/FooterLinks";
+import { footer } from "@/data/FooterLinks";
 import Link from "next/link";
-import ptsoLogo from "@/../public/ptsoLogo.webp";
+import ptsoLogo from "@/public/ptsoLogo.webp";
 import Image from "next/image";
 
 const Footer = () => {
   return (
     <div className="mx-4 mt-5">
-      <hr className="border-ptso-blue-accent border-t-4"></hr>
       <div className="items-center justify-between justify-items-center p-4 text-3xl md:flex md:text-3xl">
         <div className="flex tracking-widest">
           <Image src={ptsoLogo} alt="Image" width={60} height={60} />
-          <p className="m-3 mt-8 text-2xl font-semibold md:m-5 md:mt-7 md:text-3xl">
+          <div className="m-3 mt-8 text-2xl font-semibold md:m-5 md:mt-7 md:text-3xl">
             PTSO
-          </p>
+          </div>
         </div>
-        <div className="hidden h-24 grid-cols-2 justify-center space-x-5 divide-x-2 md:grid">
+        <div className="hidden grid-cols-2 justify-center space-x-5 divide-x-2 md:grid">
           <div className="flex flex-row items-center space-x-5">
-            {FOOTER.slice(0, 2).map((social, index) => (
+            {footer.slice(0, 2).map(({ link, icon }, index) => (
               <Link
                 className="transition ease-in-out hover:-translate-y-1"
                 key={index}
-                href={social.link}
+                href={link}
+                target="_blank"
               >
-                {social.icon}
+                {icon}
               </Link>
             ))}
           </div>
           <div className="item-center flex flex-col justify-center space-y-3 text-xl">
-            {FOOTER.slice(4).map((social, index) => (
+            {footer.slice(2).map(({ link, name }, index) => (
               <Link
                 className="transition ease-in-out hover:-translate-y-1"
                 key={index}
-                href={social.link}
+                href={link}
+                target="_blank"
               >
-                {social.name}
+                {name}
               </Link>
             ))}
           </div>
         </div>
         <div className="mt-5 flex flex-row space-x-5 md:hidden">
-          {FOOTER.map((social, index) => (
+          {footer.map(({ link, icon }, index) => (
             <Link
               className="transition ease-in-out hover:-translate-y-1"
               key={index}
-              href={social.link}
+              href={link}
+              target="_blank"
             >
-              {social.icon}
+              {icon}
             </Link>
           ))}
         </div>
