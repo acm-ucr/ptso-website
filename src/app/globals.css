@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -11,6 +14,7 @@
   --color-ptso-pink-secondary: #b06985;
   --color-ptso-pink-accent: #a85173;
 
-  --be_vietnam_pro-font: "Be_Vietnam_Pro";
-  --quicksand-font: "Quicksand";
+  --font-beVietnamPro: "Be_Vietnam_Pro";
+  --font-quicksand: "Quicksand";
+  --font-average: "Average";
 }
