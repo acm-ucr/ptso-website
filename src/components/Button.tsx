@@ -21,7 +21,7 @@ const Button = ({
     <Link href={link} target={target} className="block">
       <div
         className={
-          "${bgColor} ${textColor} ${rounded} px-6 py-2 text-center font-semibold transition duration-200 hover:opacity-90"
+          '${bgColor} ${textColor} ${rounded} px-6 py-2 text-center font-semibold transition duration-200 hover:opacity-90'
         }
       >
         {label}
