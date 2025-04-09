@@ -1,32 +1,26 @@
-import React from "react";
+import Image from "next/image";
+import rectangle1 from "@/public/assets/header/rectangle1.svg";
+import rectangle2 from "@/public/assets/header/rectangle2.svg";
 
 interface HeaderProps {
   title: string;
 }
-
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header = ({ title }: HeaderProps) => {
   return (
-    <div className="relative w-full bg-blue-100">
-      {/* Top Background Image */}
-      <img
-        src="/assets/header/rectangle2.svg"
-        alt="Header background top"
-        className="absolute bottom-[-250px] left-0 w-full"
-      />
-
-      {/* Bottom Background Image (Lowered) */}
-      <img
-        src="/assets/header/rectangle1.svg"
-        alt="Header background bottom"
-        className="absolute bottom-[-190px] left-0 w-full"
-      />
-
-      {/* Title */}
-      <div className="relative flex items-center justify-center">
-        <h1 className="text-ptso-pink-accent pt-30 text-3xl font-bold">
-          {title}
-        </h1>
+    <div className="absolute top-0 -z-20 w-full">
+      <div className="text-ptso-pink-accent bg-ptso-blue-primary relative flex h-54 items-center justify-center pt-12 text-3xl font-bold">
+        {title}
       </div>
+      <Image
+        src={rectangle2}
+        alt="Header background top"
+        className="absolute -bottom-24 -z-20 w-full"
+      />
+      <Image
+        src={rectangle1}
+        alt="Header background bottom"
+        className="absolute -bottom-12 -z-20 w-full"
+      />
     </div>
   );
 };
