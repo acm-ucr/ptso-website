@@ -9,11 +9,7 @@ interface buttonProps {
   rounded: string;
 }
 
-const Button = ({
-  label,
-  target,
-  link,
-}: buttonProps) => {
+const Button = ({ label, target, link }: buttonProps) => {
   return (
     <Link href={link} target={target} className="block">
       <div
