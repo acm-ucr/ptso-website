@@ -6,7 +6,7 @@ import Founders from "@/components/board/Founders";
 const Board = () => {
   return (
     <div>
-      <Header />
+      <Header title="Board" />
       <CurrentBoard />
       <OldBoard />
       <Founders />
