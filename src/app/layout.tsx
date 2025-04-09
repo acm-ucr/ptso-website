@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { Be_Vietnam_Pro, Quicksand } from "next/font/google";
+import { Be_Vietnam_Pro, Quicksand, Average } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -19,6 +19,13 @@ const quicksand = Quicksand({
   variable: "--quicksand-font",
 });
 
+const average = Average({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--average-font",
+});
+
 export const metadata = {
   title: "UCR Pre-Therapy Student Organization",
   description:
@@ -32,7 +39,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${beVietnamPro.className} ${quicksand.className}`}>
+      <body
+        className={`${beVietnamPro.className} ${quicksand.className} ${average.className}`}
+      >
         <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
         <Footer />
