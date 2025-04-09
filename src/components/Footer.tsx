@@ -1,5 +1,6 @@
 import { footer } from "@/data/FooterLinks";
 import Link from "next/link";
+
 import ptsoLogo from "@/public/ptsoLogo.webp";
 import Image from "next/image";
 
