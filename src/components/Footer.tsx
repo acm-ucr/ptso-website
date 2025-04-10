@@ -1,11 +1,13 @@
 import { footer } from "@/data/FooterLinks";
 import Link from "next/link";
-import ptsoLogo from "@/public/ptsoLogo.webp";
 import Image from "next/image";
+import ptsoLogo from "@/public/ptsoLogo.webp";
+import Divider from "@/components/Divider";
 
 const Footer = () => {
   return (
     <div className="mx-4 mt-5">
+      <Divider />
       <div className="items-center justify-between justify-items-center p-4 text-3xl md:flex md:text-3xl">
         <div className="flex tracking-widest">
           <Image src={ptsoLogo} alt="Image" width={60} height={60} />
