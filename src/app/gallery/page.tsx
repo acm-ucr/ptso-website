@@ -4,7 +4,7 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 const Gallery = () => {
   return (
     <div>
-      <Header />
+      <Header title="Gallery" />
       <GalleryGrid />
     </div>
   );
