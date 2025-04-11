@@ -1,7 +1,7 @@
 import { footer } from "@/data/FooterLinks";
 import Link from "next/link";
 import Image from "next/image";
-import ptsoLogo from "@/public/ptsoLogo.webp";
+import ptsoLogo from "@/public/ptsoLogoSmall.webp";
 import Divider from "@/components/Divider";
 
 const Footer = () => {
