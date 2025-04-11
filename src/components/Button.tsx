@@ -4,9 +4,6 @@ interface buttonProps {
   label: string;
   target: string;
   link: string;
-  bgColor: string;
-  textColor: string;
-  rounded: string;
 }
 
 const Button = ({ label, target, link }: buttonProps) => {
