@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { navigations } from "@/data/NavbarLinks";
 import ptsoLogo from "@/public/ptsoLogo.webp";
+import Divider from "@/components/Divider";
 
 const Navbar = () => {
   return (
-    <div className="text-ptso-purple-accent relative">
+    <div className="text-ptso-purple-accent mx-4">
       <div className="flex items-center justify-between px-6 py-3">
-        <Link href="/" className="flex w-1/5 items-center">
+        <Link href="/" className="flex items-center">
           <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
           <div className="px-4 text-3xl">PTSO</div>
         </Link>
@@ -20,6 +21,7 @@ const Navbar = () => {
         </div>
         <div className="w-1/4 text-right">JOIN US</div>
       </div>
+      <Divider />
     </div>
   );
 };
