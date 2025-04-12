@@ -25,8 +25,8 @@ const Redirect = ({ statusCode = 404 }: redirectProps) => {
         className="absolute top-0 left-0 z-0 w-full"
       />
 
-      <div className="flex h-[72vh] md:min-h-screen flex-col items-center justify-center text-center">
-        <div className="text-ptso-purple-secondary mb-4 inline-block border-b-5 font-beVietnamPro text-9xl font-extrabold">
+      <div className="flex h-[72vh] flex-col items-center justify-center text-center md:min-h-screen">
+        <div className="text-ptso-purple-secondary font-beVietnamPro mb-4 inline-block border-b-5 text-9xl font-extrabold">
           {statusCode}
         </div>
 
