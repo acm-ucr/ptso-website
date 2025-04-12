@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navigations } from "@/data/NavbarLinks";
-import ptsoLogo from "@/public/ptsoLogo.webp";
+import ptsoLogo from "@/public/ptsoLogoSmall.webp";
 import Divider from "@/components/Divider";
 
 const Navbar = () => {
