@@ -6,7 +6,11 @@ import rectangle2 from "@/public/assets/not-found/rectangle2.svg";
 import rectangle3 from "@/public/assets/not-found/rectangle3.svg";
 import rectangle4 from "@/public/assets/not-found/rectangle4.svg";
 
-const Redirect = () => {
+interface redirectProps {
+  statusCode?: number;
+}
+
+const Redirect = ({ statusCode = 404 }: redirectProps) => {
   return (
     <div className="relative overflow-hidden">
       <Image
@@ -21,12 +25,11 @@ const Redirect = () => {
         className="absolute top-0 left-0 z-0 w-full"
       />
 
-      <div className="mt-25 mb-60 flex min-h-screen flex-col items-center justify-center text-center">
-        <div className="text-ptso-purple-secondary mb-4 inline-block border-b-5 font-[Be_Vietnam_Pro] text-9xl font-extrabold">
-          404
+      <div className="flex h-[72vh] md:min-h-screen flex-col items-center justify-center text-center">
+        <div className="text-ptso-purple-secondary mb-4 inline-block border-b-5 font-beVietnamPro text-9xl font-extrabold">
+          {statusCode}
         </div>
 
-        <div className="bg-tso-purple-secondary mb-4 h-1 w-40"></div>
         <p className="text-ptso-purple-accent mb-8 text-2xl">
           Oops! The page you are looking for cannot be found.
         </p>
@@ -36,7 +39,7 @@ const Redirect = () => {
           className="bg-ptso-purple-secondary z-10 inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-xl text-white transition-all duration-300 ease-in-out hover:scale-105"
         >
           Return home
-          <span className="text-xl"> →</span>
+          <div className="text-xl"> →</div>
         </Link>
       </div>
 
