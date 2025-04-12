@@ -4,7 +4,8 @@ import Link from "next/link";
 import { MenuIcon } from "lucide-react";
 import { useState } from "react";
 import { navigations } from "@/data/NavbarLinks";
-import ptsoLogo from "@/public/ptsoLogo.webp";
+import ptsoLogo from "@/public/ptsoLogoSmall.webp";
+import Divider from "@/components/Divider";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-ptso-purple-accent bg-ptso-blue-primary">
-      {/* normal navigation bar */}
-      <div className="hidden items-center px-6 py-3 md:flex">
-        <Link href="/" className="flex w-1/5 items-center">
+    <div className="text-ptso-purple-accent mx-4 bg-ptso-blue-primary">
+      <div className="hidden md:flex items-center px-6 py-3">
+        <Link href="/" className="flex items-center">
           <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
           <div className="px-4 text-3xl">PTSO</div>
         </Link>
@@ -34,7 +34,6 @@ const Navbar = () => {
         </div>
         <div className="w-1/4 text-right">JOIN US</div>
       </div>
-      {/* mobile navigation bar */}
       <div className="md:hidden">
         <div className="flex items-center justify-between p-4">
           <Link href="\" onClick={closeMenu}>
@@ -68,6 +67,7 @@ const Navbar = () => {
           <div className="border-b">JOIN US</div>
         </div>
       </div>
+      <Divider />
     </div>
   );
 };
