@@ -19,8 +19,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-ptso-purple-accent mx-4 bg-ptso-blue-primary">
-      <div className="hidden md:flex items-center px-6 py-3">
+    <div className="text-ptso-purple-accent bg-ptso-blue-primary mx-4">
+      <div className="hidden items-center px-6 py-3 md:flex">
         <Link href="/" className="flex items-center">
           <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
           <div className="px-4 text-3xl">PTSO</div>
@@ -48,11 +48,11 @@ const Navbar = () => {
           </Link>
           <div onClick={handleClick} className="hover:cursor-pointer">
             {" "}
-            <MenuIcon size={32}/>{" "}
+            <MenuIcon size={32} />{" "}
           </div>
         </div>
         <div
-          className={`items-center gap-3 pb-8 ${!isOpen ? "hidden" : "flex flex-col"}`}
+          className={`items-center gap-3 ${!isOpen ? "hidden" : "flex flex-col"}`}
         >
           {navigations.map(({ link, name }, index) => (
             <Link
