@@ -7,10 +7,10 @@ import rectangle3 from "@/public/assets/not-found/rectangle3.svg";
 import rectangle4 from "@/public/assets/not-found/rectangle4.svg";
 
 interface redirectProps {
-  statusCode?: number;
+  statusCode: number;
 }
 
-const Redirect = ({ statusCode = 404 }: redirectProps) => {
+const Redirect = ({ statusCode }: redirectProps) => {
   return (
     <div className="relative overflow-hidden">
       <Image
@@ -26,13 +26,13 @@ const Redirect = ({ statusCode = 404 }: redirectProps) => {
       />
 
       <div className="flex h-[72vh] flex-col items-center justify-center text-center md:min-h-screen">
-        <div className="text-ptso-purple-secondary font-beVietnamPro mb-4 inline-block border-b-5 text-9xl font-extrabold">
+        <div className="text-ptso-purple-secondary font-beVietnamPro mb-4 border-b-5 text-9xl font-extrabold">
           {statusCode}
         </div>
 
-        <p className="text-ptso-purple-accent mb-8 text-2xl">
+        <div className="text-ptso-purple-accent mb-8 text-2xl">
           Oops! The page you are looking for cannot be found.
-        </p>
+        </div>
 
         <Link
           href="/"
