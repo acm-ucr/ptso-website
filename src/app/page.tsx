@@ -13,7 +13,7 @@ const Home = () => {
       <OurValues />
       <Instagram />
       <ContactUs />
-      <Example text1="Adjust" text2="Props" text3="Props" />
+      <Example text1="Some" text2="Props" text3="Here" />
     </div>
   );
 };
