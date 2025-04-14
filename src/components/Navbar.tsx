@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className="text-ptso-purple-accent bg-ptso-blue-primary">
       <div className="hidden items-center p-4 md:flex">
-        <Link href="/" className="flex items-center mr-8">
+        <Link href="/" className="mr-8 flex items-center">
           <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
           <div className="px-4 text-3xl">PTSO</div>
         </Link>
@@ -67,7 +67,9 @@ const Navbar = () => {
           <div className="border-b">JOIN US</div>
         </div>
       </div>
-      <div className="mx-4 pt-5"><Divider /></div>
+      <div className="mx-4 pt-4">
+        <Divider />
+      </div>
     </div>
   );
 };
