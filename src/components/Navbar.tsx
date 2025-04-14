@@ -19,9 +19,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-ptso-purple-accent bg-ptso-blue-primary mx-4">
-      <div className="hidden items-center px-6 py-3 md:flex">
-        <Link href="/" className="flex items-center">
+    <div className="text-ptso-purple-accent bg-ptso-blue-primary">
+      <div className="hidden items-center p-4 md:flex">
+        <Link href="/" className="flex items-center mr-8">
           <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
           <div className="px-4 text-3xl">PTSO</div>
         </Link>
@@ -32,10 +32,10 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="w-1/4 text-right">JOIN US</div>
+        <div className="w-1/3 text-right">JOIN US</div>
       </div>
       <div className="md:hidden">
-        <div className="flex items-center justify-between p-4">
+        <div className="flex items-center justify-between px-4 pt-4">
           <Link href="\" onClick={closeMenu}>
             {" "}
             <Image
@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="border-b">JOIN US</div>
         </div>
       </div>
-      <Divider />
+      <div className="mx-4 pt-5"><Divider /></div>
     </div>
   );
 };
