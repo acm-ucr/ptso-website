@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="border-b">JOIN US</div>
         </div>
       </div>
-      <div className="mx-4 pt-4">
+      <div className="mx-4 pt-4 md:pt-0">
         <Divider />
       </div>
     </div>
