@@ -1,18 +1,20 @@
 const Example = (props: { text1: string; text2: string; text3: string }) => {
   return (
-    <div className="bg-ptso-pink-primary flex w-3/4 items-center gap-1 justify-self-center p-10">
-      <div className="bg-ptso-blue-secondary w-1/2 p-5 text-left">
+    <div className="bg-ptso-pink-primary flex w-2/3 flex-col items-center gap-13 justify-self-center rounded-lg p-10">
+      <div className="bg-ptso-purple-primary font-quicksand w-1/2 p-6 text-center text-xl font-black">
         {props.text1}
       </div>
-      <div className="flex w-1/2 flex-row gap-1">
-        <div className="bg-ptso-blue-secondary w-full p-5 text-left">
-          props.text2
+      <div className="flex w-1/2 flex-row gap-3">
+        <div className="bg-ptso-purple-secondary font-quicksand w-full rounded-full p-6 text-center text-xl font-black">
+          {props.text2}
         </div>
-        <div className="bg-ptso-blue-secondary w-full p-5 text-right">
+        <div className="bg-ptso-purple-secondary font-quicksand w-full rounded-full p-6 text-center text-xl font-black">
           {props.text2}
         </div>
       </div>
-      {/* Hint: Add another box/div here similarly to line 4 */}
+      <div className="bg-ptso-purple-accent font-quicksand w-1/2 p-6 text-center text-xl font-black text-white">
+        {props.text3}
+      </div>
     </div>
   );
 };
