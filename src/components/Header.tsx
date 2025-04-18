@@ -6,7 +6,7 @@ interface HeaderProps {
 const Header = ({ title }: HeaderProps) => {
   return (
     <div>
-      <div className="text-ptso-pink-accent bg-ptso-blue-primary border-ptso-blue-primary flex justify-center border-b-4 pt-12 text-3xl font-bold">
+      <div className="text-ptso-pink-accent bg-ptso-blue-primary border-ptso-blue-primary flex justify-center border-b-4 pt-12 pb-1 text-3xl font-bold">
         {title}
       </div>
       <Image
