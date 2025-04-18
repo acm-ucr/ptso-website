@@ -16,7 +16,7 @@ const Header = ({ title }: HeaderProps) => {
       <Image
         src={rectangle2}
         alt="Header background top"
-        className="absolute -bottom-20 -z-20 w-full"
+        className="absolute -bottom-16 -z-20 w-full sm:-bottom-20"
       />
       <Image
         src={rectangle1}
