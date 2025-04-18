@@ -7,9 +7,11 @@ const Board = () => {
   return (
     <div>
       <Header title="Board" />
-      <CurrentBoard />
-      <OldBoard />
-      <Founders />
+      <div className="mt-36">
+        <CurrentBoard />
+        <OldBoard />
+        <Founders />
+      </div>
     </div>
   );
 };

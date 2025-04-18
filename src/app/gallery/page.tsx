@@ -5,7 +5,9 @@ const Gallery = () => {
   return (
     <div>
       <Header title="Gallery" />
-      <GalleryGrid />
+      <div className="mt-36">
+        <GalleryGrid />
+      </div>
     </div>
   );
 };

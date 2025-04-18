@@ -8,18 +8,20 @@ interface HeaderProps {
 const Header = ({ title }: HeaderProps) => {
   return (
     <div className="absolute top-0 -z-20 w-full">
-      <div className="text-ptso-pink-accent bg-ptso-blue-primary relative flex h-54 items-center justify-center pt-12 text-3xl font-bold">
+      <div className="text-ptso-pink-accent bg-ptso-blue-primary relative flex h-44 items-center justify-center pt-12 text-3xl font-bold">
+        <br />
+        <br />
         {title}
       </div>
       <Image
         src={rectangle2}
         alt="Header background top"
-        className="absolute -bottom-24 -z-20 w-full"
+        className="absolute -bottom-20 -z-20 w-full"
       />
       <Image
         src={rectangle1}
         alt="Header background bottom"
-        className="absolute -bottom-12 -z-20 w-full"
+        className="absolute -bottom-8 -z-20 w-full"
       />
     </div>
   );
