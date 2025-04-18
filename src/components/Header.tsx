@@ -1,27 +1,18 @@
 import Image from "next/image";
-import rectangle1 from "@/public/assets/header/rectangle1.svg";
-import rectangle2 from "@/public/assets/header/rectangle2.svg";
-
+import background from "@/public/assets/header/background.svg";
 interface HeaderProps {
   title: string;
 }
 const Header = ({ title }: HeaderProps) => {
   return (
-    <div className="absolute top-0 -z-20 w-full">
-      <div className="text-ptso-pink-accent bg-ptso-blue-primary relative flex h-44 items-center justify-center pt-12 text-3xl font-bold">
-        <br />
-        <br />
+    <div>
+      <div className="text-ptso-pink-accent bg-ptso-blue-primary border-ptso-blue-primary flex justify-center border-b-4 pt-12 text-3xl font-bold">
         {title}
       </div>
       <Image
-        src={rectangle2}
+        src={background}
         alt="Header background top"
-        className="absolute -bottom-16 -z-20 w-full sm:-bottom-20"
-      />
-      <Image
-        src={rectangle1}
-        alt="Header background bottom"
-        className="absolute -bottom-8 -z-20 w-full"
+        className="border-ptso-blue-primary -mt-6 w-full border-t-16"
       />
     </div>
   );

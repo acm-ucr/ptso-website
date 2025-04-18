@@ -7,11 +7,9 @@ const About = () => {
   return (
     <div>
       <Header title="About" />
-      <div className="mt-[20vh]">
-        <Mission />
-        <ValueList />
-        <TherapyTypes />
-      </div>
+      <Mission />
+      <ValueList />
+      <TherapyTypes />
     </div>
   );
 };
