@@ -7,13 +7,12 @@ const Founders = () => {
       <div className="text-ptso-pink-accent font-beVietnamPro text-center text-3xl font-extrabold md:text-5xl">
         Our Founders
       </div>
-      <div className="flex w-2/3 justify-between">
-        {founders.map(({ img, name, alt }, index) => (
-          <div className="m-6 flex-col text-center md:text-2xl">
+      <div className="w-2/3 justify-between sm:flex">
+        {founders.map(({ image, name, alt }, index) => (
+          <div className="m-6 flex-col text-center md:text-2xl" key={index}>
             <Image
-              src={img}
+              src={image}
               alt={alt}
-              key={index}
               width={300}
               height={300}
               className="mb-2"

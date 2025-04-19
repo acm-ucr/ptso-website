@@ -1,18 +1,22 @@
+import Casey from "@/public/assets/board/CaseyMin.webp";
+import Natalie from "@/public/assets/board/NatalieHwang.webp";
+import { StaticImageData } from "next/image";
+
 interface founder {
   name: string;
-  img: string;
+  image: StaticImageData;
   alt: string;
 }
 
 export const founders: founder[] = [
   {
     name: "Casey Min",
-    img: "/assets/board/CaseyMin.webp",
+    image: Casey,
     alt: "Casey Min",
   },
   {
     name: "Natalie Hwang",
-    img: "/assets/board/NatalieHwang.webp",
+    image: Natalie,
     alt: "Natalie Hwang",
   },
 ];
