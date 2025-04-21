@@ -1,15 +1,20 @@
+import Image from "next/image";
+import Ring from "@/public/assets/about/therapyTypes/ring.webp";
+
 const TherapyCard = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <div className="bg-ptso-pink-secondary flex h-[200px] w-[170px] flex-col items-center justify-center rounded-xl p-4">
-        <img
-          src="/assets/about/therapyTypes/ring.webp"
+    <div className="flex w-full justify-center">
+      <div className="bg-ptso-pink-secondary flex flex-col items-center justify-center rounded-xl p-12">
+        <Image
+          src={Ring}
           alt="Marriage & Family Therapy"
-          className="h-15 w-15 object-contain"
+          width={80}
+          height={80}
+          className="mt-12 object-contain"
         />
-        <h3 className="font-be-vietnam-pro w-full p-0 text-left text-white">
+        <div className="font-beVietnamPro mb-12 w-full p-0 text-center text-2xl text-white">
           Marriage & Family
-        </h3>
+        </div>
       </div>
     </div>
   );
