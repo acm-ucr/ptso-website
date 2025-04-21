@@ -1,13 +1,13 @@
 const TherapyCard = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen"> 
-      <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-ptso-pink-secondary w-[170px] h-[200px]">
+    <div className="flex min-h-screen items-center justify-center">
+      <div className="bg-ptso-pink-secondary flex h-[200px] w-[170px] flex-col items-center justify-center rounded-xl p-4">
         <img
           src="/assets/about/therapyTypes/ring.webp"
           alt="Marriage & Family Therapy"
-          className="w-15 h-15 object-contain"
+          className="h-15 w-15 object-contain"
         />
-        <h3 className="w-full p-0 text-left text-white font-be-vietnam-pro">
+        <h3 className="font-be-vietnam-pro w-full p-0 text-left text-white">
           Marriage & Family
         </h3>
       </div>
