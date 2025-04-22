@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PTSOLogo from "@/public/ptsoLogoLarge.webp";
+import "@/app/globals.css";
 import PTSOLogoBackground from "@/public/assets/home/ptsoLogoBackground.svg";
 import rectangle1 from "@/public/assets/home/background/landing.svg";
 import purplediamond from "@/public/assets/home/shapes/purpleDiamond.svg";
@@ -10,36 +11,42 @@ const Landing = () => {
     <div className="mb-20">
       <div className="bg-ptso-blue-primary relative z-10 flex flex-col items-center justify-center pt-10 text-center">
         <Image
-          src={whitediamond}
-          alt="star1"
-          className="absolute left-10 ml-25 w-full max-w-[64px]"
-        />
-        <Image
-          src={whitediamond}
-          alt="star2"
-          className="absolute right-10 mr-20 w-full max-w-[68px]"
+          src={purplediamond}
+          alt="star"
+          width={75}
+          className="absolute left-60 -mt-95 ml-75 hidden md:flex"
         />
         <Image
           src={purplediamond}
+          alt="star2"
+          width={90}
+          className="absolute right-20 mt-80 mr-90 hidden md:flex"
+        />
+        <Image
+          src={whitediamond}
           alt="star3"
-          className="absolute right-15 mr-12 w-full max-w-[64px]"
+          width={100}
+          className="absolute left-20 mt-12 ml-32 hidden md:flex"
         />
         <Image
           src={purplediamond}
           alt="star4"
-          className="absolute left-15 ml-15 w-full max-w-[68px]"
+          width={40}
+          className="absolute left-15 mt-20 ml-50 hidden md:flex"
+        />
+        <Image
+          src={whitediamond}
+          alt="star1"
+          width={100}
+          className="absolute top-10 right-60 mt-15 mr-70 hidden md:flex"
         />
         <Image
           src={purplediamond}
           alt="star5"
-          className="absolute top-15 left-30 ml-20 w-full max-w-[64px]"
+          width={40}
+          className="absolute top-10 right-60 mt-20 mr-72 hidden md:flex"
         />
-        <Image
-          src={purplediamond}
-          alt="star6"
-          className="absolute top-15 right-30 mr-20 w-full max-w-[68px]"
-        />
-        <div className="relative w-full max-w-[180px]">
+        <div className="relative w-full max-w-[250px]">
           <Image
             src={PTSOLogo}
             alt="PTSO logo"
@@ -52,12 +59,12 @@ const Landing = () => {
             className="absolute top-0 left-0 -z-10 h-auto w-full"
           />
         </div>
-        <div className="text-ptso-navy text-3xl leading-tight font-bold md:text-5xl">
+        <div className="text-ptso-navy font-beVietnamPro text-3xl leading-tight font-bold md:text-5xl">
           Pre-Therapy
           <br />
           Student Organization
         </div>
-        <div className="text-ptso-navy mt-4 text-lg md:text-xl">
+        <div className="text-ptso-navy font-beVietnamPro mt-4 text-lg md:text-xl">
           UCR Student Organization est. 2024
         </div>
       </div>
@@ -66,7 +73,7 @@ const Landing = () => {
         <Image
           src={rectangle1}
           alt="Header background bottom"
-          className="border-ptso-blue-primary -mt-12 w-full border-t-16"
+          className="border-ptso-blue-primary -mt-6 w-full border-t-16"
         />
       </div>
     </div>
