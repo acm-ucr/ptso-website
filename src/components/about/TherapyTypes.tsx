@@ -1,5 +1,5 @@
 import TherapyCard from "@/components/about/TherapyCard";
-import Title from "../Title";
+import Title from "@/components/Title";
 
 const TherapyTypes = () => {
   return (
