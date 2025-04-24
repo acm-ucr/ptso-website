@@ -1,4 +1,4 @@
-import OurValuesText from "./OurValuesText";
+import OurValuesText from "@/components/home/OurValuesText";
 
 const OurValues = () => {
   return (
