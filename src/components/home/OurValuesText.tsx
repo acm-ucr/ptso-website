@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Title from "@/components/Title";
-import valueStarGroup from "@/public/assets/home/shapes/valueStarGroup.png";
+import valueStarGroup from "@/public/assets/home/shapes/valueStarGroup.webp";
 
 const OurValuesText = () => {
   return (
