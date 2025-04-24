@@ -5,7 +5,7 @@ const TherapyTypes = () => {
   return (
     <div>
       <Title text="Therapy Types" />
-      <p className="font-average mx-auto h-auto w-5/6 text-center text-xl text-black">
+      <p className="font-average mx-auto mt-8 h-auto w-5/6 text-center text-xl text-black">
         Therapy comes in many forms, each designed to support individuals in
         different aspects of their health and well-being. Whether it’s improving
         physical function, enhancing communication skills, strengthening
