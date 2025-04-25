@@ -1,5 +1,7 @@
+import Redirect from "@/components/Redirect";
+
 const NotFound = () => {
-  return <div>404 Page Not Found</div>;
+  return <Redirect statusCode={404} />;
 };
 
 export default NotFound;
