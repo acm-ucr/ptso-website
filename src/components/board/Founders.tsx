@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { founders } from "@/data/Founders";
-import Title from "../Title";
-
+import Title from "@/components/Title";
 const Founders = () => {
   return (
     <div className="flex-col justify-items-center">
