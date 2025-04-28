@@ -36,7 +36,7 @@ const ContactUs = () => {
 
         <div className="absolute top-0 flex w-screen flex-row">
           <div className="flex w-1/2 justify-center">
-            <div className="translate-x-[-8vh] translate-y-[40vh] flex flex-col items-center">
+            <div className="flex translate-x-[-8vh] translate-y-[40vh] flex-col items-center">
               <Title text="Contact Us" />
               <Image src={contactUs} alt="Contact Us Hand" className="h-2/3" />
             </div>
@@ -49,14 +49,10 @@ const ContactUs = () => {
               className="translate-x-[-8vh] translate-y-[26vh]"
             />
 
-            <div className="bg-ptso-blue-light border-ptso-blue-accent absolute h-[72vh] w-[75vh] translate-x-[-5vh] translate-y-[35vh] rounded-4xl border-3 flex items-center justify-center">
+            <div className="bg-ptso-blue-light border-ptso-blue-accent absolute flex h-[72vh] w-[75vh] translate-x-[-5vh] translate-y-[35vh] items-center justify-center rounded-4xl border-3">
               {isSubmitted ? (
-                <div className="flex flex-col items-center justify-center gap-5 font-average text-4xl">
-                  <Image
-                    src={ptsoLogoLarge}
-                    alt="Logo"
-                    className="w-[30%]"
-                  />
+                <div className="font-average flex flex-col items-center justify-center gap-5 text-4xl">
+                  <Image src={ptsoLogoLarge} alt="Logo" className="w-[30%]" />
                   Form Submitted!
                 </div>
               ) : (
