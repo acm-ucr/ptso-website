@@ -58,10 +58,9 @@ const ContactUs = () => {
               ) : (
                 <form
                   action="https://docs.google.com/forms/d/1jzI8siyhb0IFkiiah1I0O2L9M0O3iZdmZnHPkXKUwGA/formResponse"
-                  method="POST"
+                 
                   onSubmit={() => (window.submitted = true)}
                   target="hidden_iframe"
-                  className="relative m-12"
                 >
                   <div>
                     <div className="font-quicksand block text-3xl font-bold">
