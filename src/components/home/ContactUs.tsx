@@ -58,7 +58,6 @@ const ContactUs = () => {
               ) : (
                 <form
                   action="https://docs.google.com/forms/d/1jzI8siyhb0IFkiiah1I0O2L9M0O3iZdmZnHPkXKUwGA/formResponse"
-                 
                   onSubmit={() => (window.submitted = true)}
                   target="hidden_iframe"
                 >
@@ -70,7 +69,7 @@ const ContactUs = () => {
                       name="entry.1922039377"
                       type="text"
                       placeholder="Name"
-                      className="text-ptso-gray-primary border-ptso-gray-primary mt-2 h-[5vh] w-[62vh] rounded-2xl border-1 bg-white p-3"
+                      className="border-ptso-gray-primary mt-2 h-[5vh] w-[62vh] rounded-2xl border-1 bg-white p-3"
                       required
                     />
                     <div className="font-quicksand mt-4 block text-3xl font-bold">
@@ -80,7 +79,7 @@ const ContactUs = () => {
                       name="entry.190572232"
                       type="text"
                       placeholder="Email"
-                      className="text-ptso-gray-primary border-ptso-gray-primary mt-2 h-[5vh] w-[62vh] rounded-2xl border-1 bg-white p-3"
+                      className="border-ptso-gray-primary mt-2 h-[5vh] w-[62vh] rounded-2xl border-1 bg-white p-3"
                       required
                     />
                     <div className="font-quicksand mt-4 block text-3xl font-bold">
@@ -89,7 +88,7 @@ const ContactUs = () => {
                     <input
                       name="entry.1180546097"
                       type="text"
-                      className="text-ptso-gray-primary border-ptso-gray-primary mt-2 h-[19vh] w-full rounded-2xl border-1 bg-white p-3 pb-[20vh]"
+                      className="border-ptso-gray-primary mt-2 h-[19vh] w-full rounded-2xl border-1 bg-white p-3 pb-[20vh]"
                       required
                     />
                     <div className="mt-8 flex justify-center">
