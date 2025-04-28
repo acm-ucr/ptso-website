@@ -1,22 +1,22 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 
-const Value = (props: {
+interface ValueProps {
   name: string;
   image: StaticImageData;
   alt: string;
   description: string;
-}) => {
+}
+
+const Value = ({ name, image, alt, description }: ValueProps) => {
   return (
-    <div className="flex w-7/8 gap-10 space-y-25 justify-self-center">
-      <Image src={props.image} alt={props.alt} className="" />
+    <div className="flex w-7/8 gap-10 space-y-20 justify-self-center">
+      <Image src={image} alt={alt} className="" />
 
       <div className="flex-col space-y-7">
-        <div className="font-beVietnamPro text-3xl font-semibold">
-          {props.name}
-        </div>
+        <div className="font-beVietnamPro text-3xl font-semibold">{name}</div>
         <div className="font-quicksand text-xl text-indigo-950">
-          {props.description}
+          {description}
         </div>
       </div>
     </div>
