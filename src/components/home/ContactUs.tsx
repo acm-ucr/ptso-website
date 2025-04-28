@@ -64,7 +64,7 @@ const ContactUs = () => {
                   className="relative m-12"
                 >
                   <div>
-                    <div className="font-quicksand text-ptso-gray-primary block text-3xl font-bold">
+                    <div className="font-quicksand block text-3xl font-bold">
                       Name
                     </div>
                     <input
@@ -74,7 +74,7 @@ const ContactUs = () => {
                       className="text-ptso-gray-primary border-ptso-gray-primary mt-2 h-[5vh] w-[62vh] rounded-2xl border-1 bg-white p-3"
                       required
                     />
-                    <div className="font-quicksand text-ptso-gray-primary mt-4 block text-3xl font-bold">
+                    <div className="font-quicksand mt-4 block text-3xl font-bold">
                       Email
                     </div>
                     <input
@@ -84,7 +84,7 @@ const ContactUs = () => {
                       className="text-ptso-gray-primary border-ptso-gray-primary mt-2 h-[5vh] w-[62vh] rounded-2xl border-1 bg-white p-3"
                       required
                     />
-                    <div className="font-quicksand text-ptso-gray-primary mt-4 block text-3xl font-bold">
+                    <div className="font-quicksand mt-4 block text-3xl font-bold">
                       Message
                     </div>
                     <input
