@@ -4,7 +4,6 @@ import { values } from "@/data/Values";
 const ValueList = () => {
   return (
     <div className="flex-col">
-      <div>Our Values</div>
       {values.map(({ name, image, alt, description }, index) => (
         <Value
           name={name}
