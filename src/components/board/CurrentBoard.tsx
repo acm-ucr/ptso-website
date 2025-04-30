@@ -11,7 +11,7 @@ const CurrentBoard = () => {
       <Image
         src={currBoard}
         alt="Image of current board"
-        className="mx-auto h-99 w-258 rounded-lg border-3"
+        className="mx-auto h-auto w-2/3 rounded-lg border-3"
       />
       <p className="font-average mx-auto mt-2 w-6/13 text-center">
         (left to right): Casey Min, Erica Jwa, Dora Nguyen, Sage Kuck, Abigail
