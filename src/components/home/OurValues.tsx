@@ -1,4 +1,10 @@
+import OurValuesText from "@/components/home/OurValuesText";
+
 const OurValues = () => {
-  return <div className="">OurValues</div>;
+  return (
+    <div className="">
+      <OurValuesText />
+    </div>
+  );
 };
 export default OurValues;
