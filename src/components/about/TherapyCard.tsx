@@ -10,20 +10,18 @@ interface TherapyCardProps {
 
 const TherapyCard = ({ image, name, alt, color }: TherapyCardProps) => {
   return (
-    <div className="flex justify-center">
-      <div className={`${color} flex h-60 w-48 flex-col items-center justify-center rounded-xl p-6`}>
-        <div className="flex-1 flex items-center">
-          <Image
-            src={image}
-            alt={alt}
-            width={80}
-            height={80}
-            className="object-contain"
-          />
-        </div>
-        <div className="font-beVietnamPro text-center text-lg text-white">
-          {name}
-        </div>
+    <div
+      className={`${color} mx-auto flex w-3/4 flex-col items-center justify-between space-y-4 rounded-xl py-30`}
+    >
+      <Image
+        src={image}
+        alt={alt}
+        width={80}
+        height={80}
+        className="object-contain"
+      />
+      <div className="font-beVietnamPro text-center text-xl text-white">
+        {name}
       </div>
     </div>
   );
