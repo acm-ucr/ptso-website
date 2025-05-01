@@ -30,8 +30,8 @@ const TherapyTypes = () => {
           />
         ))}
       </div>
-      </div> 
-      );
-    };
+    </div>
+  );
+};
 
 export default TherapyTypes;
