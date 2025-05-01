@@ -4,9 +4,9 @@ import { therapyTypes } from "@/data/TherapyTypes";
 
 const TherapyTypes = () => {
   return (
-    <div className="mx-auto w-11/12 max-w-6xl py-8">
+    <div className="mx-auto w-11/12 max-w-6xl pb-8">
       <Title text="Therapy Types" />
-      <p className="font-average mx-auto mt-8 h-auto w-5/6 text-center text-xl text-black">
+      <p className="font-average mx-auto my-8 h-auto w-5/6 text-center text-xl text-black">
         Therapy comes in many forms, each designed to support individuals in
         different aspects of their health and well-being. Whether it’s improving
         physical function, enhancing communication skills, strengthening
@@ -19,7 +19,6 @@ const TherapyTypes = () => {
         process.
       </p>
 
-    </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         {therapyTypes.map((therapy, index) => (
           <TherapyCard
@@ -31,5 +30,8 @@ const TherapyTypes = () => {
           />
         ))}
       </div>
+      </div> 
+      );
+    };
 
 export default TherapyTypes;
