@@ -1,11 +1,16 @@
 import Image from "next/image";
-import GroupPhoto from "@/public/assets/about/therapyAbout.webp";
+import Title from "@/components/Title";
+import valueStarGroup from "@/public/assets/home/shapes/valueStarGroup.webp";
 
-const Mission = () => {
+const OurValuesText = () => {
   return (
-    <div className="m-8 flex flex-col items-center justify-around gap-3 md:flex-row">
-      <Image src={GroupPhoto} alt="Group Photo" className="md:w-2/5" />
-      <p className="text-ptso-purple-accent text-center text-lg md:w-2/5 md:text-xl">
+    <div className="w-7/25">
+      <div className="flex items-center">
+        <Image src={valueStarGroup} alt="Stars" width={50} className="z-5" />
+
+        <Title text="Our Values" />
+      </div>
+      <p className="font-quicksand mt-3 ml-5 text-xl">
         At PTSO, we are dedicated to fostering a supportive and inclusive
         community for students pursuing careers in therapy, emphasizing
         collaboration, professional growth, and lifelong learning. Our values
@@ -16,4 +21,5 @@ const Mission = () => {
     </div>
   );
 };
-export default Mission;
+
+export default OurValuesText;
