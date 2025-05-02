@@ -5,7 +5,7 @@ const CurrentBoard = () => {
   return (
     <div className="">
     <div>Current Board</div>
-    <div className="grid grid-cols-3 space-y-10">
+    <div className="flex flex-wrap space-y-15 w-3/4 justify-center justify-self-center">
       {members.map(({ name, position }, index) => (
         <BoardMember 
         name={name}
