@@ -4,17 +4,10 @@ import { picturesData } from "@/data/GalleryImages";
 
 export default function GalleryGrid() {
   return (
-    <div className="grid grid-cols-2 gap-4 p-6 lg:grid-cols-3">
-      {picturesData.map(({ className, pictures, alt }, idx) => (
-        <div
-          key={idx}
-          className={`flex aspect-[4/3] overflow-hidden rounded-lg bg-gray-200 ${className}`}
-        >
-          <Image
-            className="flex h-full w-full items-center justify-center object-cover"
-            src={pictures}
-            alt={alt}
-          />
+    <div className="mt-20 columns-3 gap-4">
+      {picturesData.map(({ className, pictures, alt }, index) => (
+        <div key={index} className={`mb-5 rounded-lg shadow-md ${className} `}>
+          <Image src={pictures} alt={alt} className="w-full object-cover" />
         </div>
       ))}
     </div>

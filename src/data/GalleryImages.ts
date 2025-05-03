@@ -18,63 +18,62 @@ import grid11 from "@/public/assets/gallery/socialBingo.webp";
 import grid12 from "@/public/assets/gallery/winter24BingoWinners.webp";
 export const picturesData: picturesData[] = [
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid1,
     alt: "Image 1",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid2,
     alt: "Image 2",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid3,
     alt: "Image 3",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid5,
     alt: "Image 5",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid6,
     alt: "Image 6",
   },
   {
-    className:
-      "flex justify-center items-center row-span-2 col-span-2  md:row-span-4 lg:row-span-4",
+    className: "",
     pictures: grid4,
     alt: "Image 4",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid7,
     alt: "Image 7",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid8,
     alt: "Image 8",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid9,
     alt: "Image 9",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid10,
     alt: "Image 10",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid11,
     alt: "Image 11",
   },
   {
-    className: "flex justify-center items-center md:row-span-2 lg:row-span-2",
+    className: "",
     pictures: grid12,
     alt: "Image 12",
   },
