@@ -18,20 +18,23 @@ const ValueList = () => {
         />
       </div>
 
-      <div className="flex-col px-8 py-24" style={{ backgroundColor: '#fbf3f3' }}>
-      {values.map(({ name, image, alt, description }, index) => (
-        <Value
-          name={name}
-          image={image}
-          alt={alt}
-          description={description}
-          key={index}
-        />
-      ))}
-    </div>
+      <div
+        className="flex-col px-8 py-24"
+        style={{ backgroundColor: "#fbf3f3" }}
+      >
+        {values.map(({ name, image, alt, description }, index) => (
+          <Value
+            name={name}
+            image={image}
+            alt={alt}
+            description={description}
+            key={index}
+          />
+        ))}
+      </div>
 
       {/* Bottom Wave */}
-      <div className="w-full ">
+      <div className="w-full">
         <Image
           src={BottomWave}
           alt="Decorative bottom wave"

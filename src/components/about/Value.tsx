@@ -14,7 +14,7 @@ const Value = ({ name, image, alt, description }: ValueProps) => {
       <Image src={image} alt={alt} width={400} height={400} />
 
       <div className="flex-col space-y-7">
-        <div className="font-quicksand text-3xl font-semibold text-ptso-purple-accent">
+        <div className="font-quicksand text-ptso-purple-accent text-3xl font-semibold">
           {name}
         </div>
         <div className="font-quicksand text-ptso-purple-accent text-xl">
