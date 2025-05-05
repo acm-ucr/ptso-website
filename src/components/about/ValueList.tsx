@@ -6,17 +6,14 @@ import BottomWave from "@/public/assets/about/background/bottomWave.svg";
 
 const ValueList = () => {
   return (
-    <section className="relative w-full">
-      {/* Top Wave*/}
-      <div className="w-full">
-        <Image
-          src={TopWave}
-          alt="Decorative top wave"
-          width={1440}
-          height={200}
-          className="w-full object-cover"
-        />
-      </div>
+    <div className="relative w-full">
+      <Image
+        src={TopWave}
+        alt="Decorative top wave"
+        width={1440}
+        height={200}
+        className="w-full object-cover"
+      />
 
       <div
         className="flex-col px-8 py-24"
@@ -33,7 +30,6 @@ const ValueList = () => {
         ))}
       </div>
 
-      {/* Bottom Wave */}
       <div className="w-full">
         <Image
           src={BottomWave}
@@ -43,7 +39,7 @@ const ValueList = () => {
           className="w-full object-cover"
         />
       </div>
-    </section>
+    </div>
   );
 };
 export default ValueList;
