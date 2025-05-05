@@ -10,10 +10,10 @@ interface ValueProps {
 
 const Value = ({ name, image, alt, description }: ValueProps) => {
   return (
-    <div className="flex w-7/8 gap-10 space-y-20 justify-self-center">
+    <div className="flex w-7/8 gap-10 space-y-12 justify-self-center">
       <Image src={image} alt={alt} />
 
-      <div className="flex-col space-y-7">
+      <div className="flex-col space-y-5">
         <div className="font-quicksand text-ptso-purple-accent text-3xl font-semibold">
           {name}
         </div>

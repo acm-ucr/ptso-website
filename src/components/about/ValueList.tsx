@@ -10,15 +10,10 @@ const ValueList = () => {
       <Image
         src={TopWave}
         alt="Decorative top wave"
-        width={1440}
-        height={200}
         className="w-full object-cover"
       />
 
-      <div
-        className="flex-col px-8 py-24"
-        style={{ backgroundColor: "#fbf3f3" }}
-      >
+      <div className="-mt-4 flex-col bg-[#FFF4F4] px-8 pt-8">
         {values.map(({ name, image, alt, description }, index) => (
           <Value
             name={name}
@@ -34,8 +29,6 @@ const ValueList = () => {
         <Image
           src={BottomWave}
           alt="Decorative bottom wave"
-          width={1440}
-          height={200}
           className="w-full object-cover"
         />
       </div>
