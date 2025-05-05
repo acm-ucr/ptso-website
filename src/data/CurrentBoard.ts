@@ -1,51 +1,51 @@
-interface currBoard {
+interface member {
   name: string;
-  role: string;
+  position: string;
 }
 
-export const currBoards: currBoard[] = [
+export const members: member[] = [
   {
     name: "Casey Min",
-    role: "President",
+    position: "President",
   },
   {
     name: "Natalie Hwang",
-    role: "Vice President",
+    position: "Vice President",
   },
   {
-    name: "Montserrant Ramirez",
-    role: "Vice President Intern",
+    name: "Montserrat Ramirez",
+    position: "Vice President Intern",
   },
   {
     name: "Vallery Ayala",
-    role: "Secretary",
+    position: "Secretary",
   },
   {
     name: "Andrew Bach",
-    role: "Treasurer",
+    position: "Treasurer",
   },
   {
     name: "Sage Kuck",
-    role: "Director of Activities",
+    position: "Director of Activities",
   },
   {
     name: "Dora Nguyen",
-    role: "Co-Director of Outreach",
+    position: "Co-Director of Outreach",
   },
   {
     name: "Koni Moss",
-    role: "Co-Director of Outreach",
+    position: "Co-Director of Outreach",
   },
   {
     name: "Celena Fu",
-    role: "Co-Director of Outreach",
+    position: "Co-Director of Outreach",
   },
   {
     name: "Abigail Hinojales",
-    role: "Co-Director of Publicity",
+    position: "Co-Director of Publicity",
   },
   {
     name: "Erica Jwa",
-    role: "Co-Director of Publicity",
+    position: "Co-Director of Publicity",
   },
 ];
