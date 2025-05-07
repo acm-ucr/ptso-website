@@ -34,7 +34,6 @@ export const picturesData: picturesData[] = [
     pictures: grid3,
     alt: "Image 3",
     description: "Nami Mumu PTSO 1",
-    
   },
   {
     pictures: grid5,
@@ -69,7 +68,7 @@ export const picturesData: picturesData[] = [
   {
     pictures: grid10,
     alt: "Image 10",
-    description: "Social Bingo"
+    description: "Social Bingo",
   },
   {
     pictures: grid11,
