@@ -7,7 +7,6 @@ declare global {
 
 import { useState } from "react";
 import Image from "next/image";
-import rectangle2 from "@/public/assets/home/background/rectangle2.svg";
 import vector6 from "@/public/assets/home/background/vector6.svg";
 import contactUs from "@/public/assets/home/contactUs.webp";
 import ptsoLogoLarge from "@/public/ptsoLogoLarge.webp";
@@ -32,7 +31,6 @@ const ContactUs = () => {
       ></iframe>
 
       <div className="relative w-screen">
-        <Image src={rectangle2} alt="Contact Us Wave" className="relative" />
 
         <div className="absolute top-0 flex w-screen md:flex-row">
           <div className="flex w-1/2 justify-center">
