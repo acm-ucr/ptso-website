@@ -6,9 +6,11 @@ import { useState } from "react";
 import { navigations } from "@/data/NavbarLinks";
 import ptsoLogo from "@/public/ptsoLogoSmall.webp";
 import Divider from "@/components/Divider";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -27,7 +29,11 @@ const Navbar = () => {
         </Link>
         <div className="font-beVietnamPro flex w-1/2 gap-11 text-xl">
           {navigations.map(({ link, name }, index) => (
-            <Link href={link} key={index}>
+            <Link
+              href={link}
+              key={index}
+              className={`hover:underline ${pathname === link ? "text-ptso-pink-secondary font-semibold" : ""}`}
+            >
               {name}
             </Link>
           ))}
@@ -59,7 +65,7 @@ const Navbar = () => {
               href={link}
               key={index}
               onClick={closeMenu}
-              className="border-b"
+              className={`border-b ${pathname === link ? "text-ptso-pink-secondary font-semibold" : ""}`}
             >
               {name}
             </Link>
