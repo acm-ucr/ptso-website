@@ -1,19 +1,23 @@
+"use client";
 import { footer } from "@/data/FooterLinks";
 import Link from "next/link";
 import Image from "next/image";
 import ptsoLogo from "@/public/ptsoLogoSmall.webp";
 import Divider from "@/components/Divider";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
+
   return (
-    <div className="mx-4 mt-5">
+    <div
+      className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : "bg-ptso-pink-light"}`}
+    >
       <Divider />
-      <div className="items-center justify-between justify-items-center p-4 text-3xl md:flex md:text-3xl">
-        <div className="flex tracking-widest">
-          <Image src={ptsoLogo} alt="Image" width={60} height={60} />
-          <div className="m-3 mt-8 text-2xl font-semibold md:m-5 md:mt-7 md:text-3xl">
-            PTSO
-          </div>
+      <div className="items-center justify-between justify-items-center py-4 text-2xl md:flex md:text-3xl">
+        <div className="flex items-center">
+          <Image src={ptsoLogo} alt="Image" width={49} height={70} />
+          <div className="px-4">PTSO</div>
         </div>
         <div className="hidden grid-cols-2 justify-center space-x-5 divide-x-2 md:grid">
           <div className="flex flex-row items-center space-x-5">
