@@ -1,15 +1,15 @@
+"use client";
+import { picturesData } from "@/data/GalleryImages";
 import ImageCard from "@/components/gallery/ImageCard";
-import GroupPic from "@/public/assets/gallery/PT.webp";
 
-const GalleryGrid = () => {
+export default function GalleryGrid() {
   return (
-    <div className="">
-      <ImageCard
-        image={GroupPic}
-        alt="Group Picture"
-        description="Fall ‘24 PT Demo"
-      />
+    <div className="mt-10 columns-3 gap-4 px-3 sm:columns-2 md:columns-3 lg:columns-3">
+      {picturesData.map(({ pictures, alt, description }, index) => (
+        <div key={index} className="py-2">
+          <ImageCard image={pictures} alt={alt} description={description} />
+        </div>
+      ))}
     </div>
   );
-};
-export default GalleryGrid;
+}
