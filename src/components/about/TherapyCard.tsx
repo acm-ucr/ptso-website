@@ -20,7 +20,7 @@ const TherapyCard = ({ image, name, alt, color }: TherapyCardProps) => {
         height={80}
         className="mt-24 object-contain"
       />
-      <div className="font-beVietnamPro mb-24 text-center text-xl text-white">
+      <div className="font-beVietnamPro mb-24 text-center text-2xl text-white">
         {name}
       </div>
     </div>
