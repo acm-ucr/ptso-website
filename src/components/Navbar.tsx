@@ -65,7 +65,7 @@ const Navbar = () => {
               href={link}
               key={index}
               onClick={closeMenu}
-              className={`border-b ${pathname === link ? "text-ptso-pink-secondary font-semibold" : ""}`}
+              className={`border-b ${pathname === link ? "text-ptso-pink-secondary" : ""}`}
             >
               {name}
             </Link>
