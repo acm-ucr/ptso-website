@@ -30,12 +30,22 @@ export const picturesData: picturesData[] = [
     description: "test",
   },
   {
+    pictures: fix2,
+    alt: "Image 4",
+    description: "test",
+  },
+  {
+    pictures: fix3,
+    alt: "Image 9",
+    description: "test",
+  },
+  {
     pictures: grid1,
     alt: "Image 1",
     description: "Winter 2024 Bingo Winners",
   },
   {
-    pictures: grid2,
+    pictures: grid3,
     alt: "Image 2",
     description: "Graduate Student Panel",
   },
@@ -50,23 +60,17 @@ export const picturesData: picturesData[] = [
     description: "Graduate Student Panel 2",
   },
   {
-    pictures: fix2,
-    alt: "Image 4",
-    description: "test",
-  },
-  {
     pictures: grid5,
     alt: "Image 5",
     description: "PT Group Photo",
   },
   {
-    pictures: grid8,
+    pictures: grid2,
     alt: "Image 8",
     description: "Bingo Group Photo",
   },
-
   {
-    pictures: grid3,
+    pictures: grid8,
     alt: "Image 3",
     description: "Nami Mumu PTSO 1",
   },
@@ -80,11 +84,7 @@ export const picturesData: picturesData[] = [
     alt: "Image 9",
     description: "PTSO Board 2",
   },
-  {
-    pictures: fix3,
-    alt: "Image 9",
-    description: "test",
-  },
+
   {
     pictures: fix4,
     alt: "Image 9",
