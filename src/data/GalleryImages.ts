@@ -6,22 +6,22 @@ interface picturesData {
   description: string;
 }
 
-import fix1 from "@/public/assets/gallery/mftApplication.png";
-import fix2 from "@/public/assets/gallery/bestBuddiesColab.png";
-import fix3 from "@/public/assets/gallery/bestBudiesAirplane.png";
-import fix4 from "@/public/assets/gallery/applicationProcessChairs.png";
-import grid1 from "@/public/assets/gallery/winter24BingoWinners.png";
-import grid2 from "@/public/assets/gallery/gradStudentPanel2.png";
-import grid3 from "@/public/assets/gallery/namiMumuPtso1.png";
-import grid4 from "@/public/assets/gallery/gradStudentPanel.png";
-import grid5 from "@/public/assets/gallery/PTGroupPhoto.png";
-import grid6 from "@/public/assets/gallery/namiMumuPtso2.png";
-import grid7 from "@/public/assets/gallery/PT.png";
-import grid8 from "@/public/assets/gallery/bingoGroupPhoto.png";
-import grid9 from "@/public/assets/gallery/PTSOBoard2.png";
-import grid10 from "@/public/assets/gallery/socialBingo.png";
-import grid11 from "@/public/assets/gallery/PTDemo.png";
-import grid12 from "@/public/assets/gallery/bingoWinners.png";
+import fix1 from "@/public/assets/gallery/mftApplication.webp";
+import fix2 from "@/public/assets/gallery/bestBuddiesColab.webp";
+import fix3 from "@/public/assets/gallery/bestBudiesAirplane.webp";
+import fix4 from "@/public/assets/gallery/applicationProcessChairs.webp";
+import grid1 from "@/public/assets/gallery/winter24BingoWinners.webp";
+import grid2 from "@/public/assets/gallery/gradStudentPanel2.webp";
+import grid3 from "@/public/assets/gallery/namiMumuPtso1.webp";
+import grid4 from "@/public/assets/gallery/gradStudentPanel.webp";
+import grid5 from "@/public/assets/gallery/PTGroupPhoto.webp";
+import grid6 from "@/public/assets/gallery/namiMumuPtso2.webp";
+import grid7 from "@/public/assets/gallery/PT.webp";
+import grid8 from "@/public/assets/gallery/bingoGroupPhoto.webp";
+import grid9 from "@/public/assets/gallery/PTSOBoard2.webp";
+import grid10 from "@/public/assets/gallery/socialBingo.webp";
+import grid11 from "@/public/assets/gallery/PTDemo.webp";
+import grid12 from "@/public/assets/gallery/bingoWinners.webp";
 
 export const picturesData: picturesData[] = [
   {
