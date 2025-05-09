@@ -2,13 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
 @import "tailwindcss";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-ptso-blue-light: #ecf5fd;
-  --color-ptso-blue-dark: #4545a4;
   --color-ptso-blue-primary: #daedfe;
   --color-ptso-blue-secondary: #b6cde4;
   --color-ptso-blue-accent: #80aed9;
@@ -18,8 +13,8 @@
   --color-ptso-pink-primary: #d092aa;
   --color-ptso-pink-secondary: #b06985;
   --color-ptso-pink-accent: #a85173;
-  --color-ptso-gray-primary: #757575;
   --color-ptso-pink-light: #fff4f4;
+
   --font-beVietnamPro: "Be_Vietnam_Pro";
   --font-quicksand: "Quicksand";
   --font-average: "Average";
