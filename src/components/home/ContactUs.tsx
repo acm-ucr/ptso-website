@@ -4,7 +4,6 @@ declare global {
     submitted: boolean;
   }
 }
-
 import { useState } from "react";
 import Image from "next/image";
 import vector6 from "@/public/assets/home/background/vector6.svg";
@@ -30,12 +29,12 @@ const ContactUs = () => {
         }}
       ></iframe>
 
-      <div className="block md:hidden w-full text-center">
+      <div className="block w-full text-center md:hidden">
         <Title text="Contact Us" />
       </div>
 
-      <div className="flex md:flex-row flex-col">
-        <div className="flex justify-center md:w-1/2 items-center">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex items-center justify-center md:w-1/2">
           <div className="flex md:flex-col md:items-center md:justify-center md:gap-6">
             <div className="hidden md:block">
               <Title text="Contact Us" />
@@ -55,53 +54,52 @@ const ContactUs = () => {
             className="relative right-5 hidden md:block"
           />
 
-          <div className="bg-ptso-blue-light border-ptso-blue-accent rounded-4xl mt-10 border-3 p-8 w-full  md:absolute md:h-5/6 md:w-5/6">
+          <div className="bg-ptso-blue-light border-ptso-blue-accent w-full rounded-4xl border-3 p-8 md:absolute md:mt-10 md:h-full md:w-5/6">
             {isSubmitted ? (
-              <div className="font-average flex flex-col items-center gap-5 text-4xl">
-                <Image src={ptsoLogoLarge} alt="Logo" className="w-[30%]" />
+              <div className="font-average flex flex-col items-center text-4xl">
+                <Image src={ptsoLogoLarge} alt="Logo" className="m-10 w-1/3" />
                 Form Submitted!
               </div>
             ) : (
               <form
-                className="w-full"
                 action="https://docs.google.com/forms/d/1jzI8siyhb0IFkiiah1I0O2L9M0O3iZdmZnHPkXKUwGA/formResponse"
                 onSubmit={() => (window.submitted = true)}
                 target="hidden_iframe"
               >
                 <div className="w-full">
-                  <div className="font-quicksand text-md block font-bold md:text-3xl">
+                  <div className="font-quicksand text-md block font-bold md:text-2xl">
                     Name
                   </div>
                   <input
                     name="entry.1922039377"
                     type="text"
                     placeholder="Name"
-                    className="border-ptso-gray-primary mt-2  w-full rounded-2xl border-1 bg-white p-3"
+                    className="border-ptso-gray-primary mt-2 h-full w-full rounded-2xl border-1 bg-white p-3"
                     required
                   />
 
-                  <div className="font-quicksand text-md mt-4 block font-bold md:text-3xl">
+                  <div className="font-quicksand text-md mt-4 block font-bold md:text-2xl">
                     Email
                   </div>
                   <input
                     name="entry.190572232"
                     type="text"
                     placeholder="Email"
-                    className="border-ptso-gray-primary mt-2  w-full rounded-2xl border-1 bg-white p-3"
+                    className="border-ptso-gray-primary mt-2 h-full w-full rounded-2xl border-1 bg-white p-3"
                     required
                   />
 
-                  <div className="font-quicksand text-md mt-4 block font-bold md:text-3xl">
+                  <div className="font-quicksand text-md mt-4 block font-bold md:text-2xl">
                     Message
                   </div>
                   <textarea
                     name="entry.1180546097"
-                    className="border-ptso-gray-primary mt-2 w-full rounded-2xl border-1 bg-white p-5 "
+                    className="border-ptso-gray-primary mt-2 h-full w-full rounded-2xl border-1 bg-white p-8"
                     required
                   ></textarea>
 
-                  <div className="mt-8 flex justify-center">
-                    <button className="bg-ptso-blue-dark h-12 w-1/3 cursor-pointer rounded-2xl text-white">
+                  <div className="flex justify-center">
+                    <button className="bg-ptso-blue-dark h-full w-1/3 cursor-pointer rounded-2xl p-3 text-white">
                       Submit
                     </button>
                   </div>
