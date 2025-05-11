@@ -74,7 +74,7 @@ const ContactUs = () => {
                   name="entry.1922039377"
                   type="text"
                   placeholder="Name"
-                  className="border-ptso-gray-primary mt-2 w-full rounded-2xl border-1 bg-white p-3"
+                  className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-3"
                   required
                 />
 
@@ -85,7 +85,7 @@ const ContactUs = () => {
                   name="entry.190572232"
                   type="text"
                   placeholder="Email"
-                  className="border-ptso-gray-primary mt-2 w-full rounded-2xl border-1 bg-white p-3"
+                  className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-3"
                   required
                 />
 
@@ -94,7 +94,7 @@ const ContactUs = () => {
                 </div>
                 <textarea
                   name="entry.1180546097"
-                  className="border-ptso-gray-primary mt-2 w-full rounded-2xl border-1 bg-white p-6"
+                  className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-6"
                   required
                 ></textarea>
                 <motion.div whileHover={{ scale: 1.05 }}>
