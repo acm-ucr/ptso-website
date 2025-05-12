@@ -25,85 +25,85 @@ import grid15 from "@/public/assets/gallery/bingoWinners.webp";
 export const picturesData: picturesData[] = [
   {
     pictures: grid0,
-    alt: "Image 0",
-    description: "test",
+    alt: "mftApplication",
+    description: "Marriage and Family Therapy Application",
   },
   {
     pictures: grid1,
-    alt: "Image 2",
-    description: "test",
+    alt: "bestBuddiesColab",
+    description: "Best Buddies Colab",
   },
   {
     pictures: grid2,
-    alt: "Image 3",
-    description: "test",
+    alt: "bestBudiesAirplane",
+    description: "Best Budies Airplane",
   },
   {
     pictures: grid3,
-    alt: "Image 1",
+    alt: "winter24BingoWinners",
     description: "Winter 2024 Bingo Winners",
   },
   {
     pictures: grid4,
-    alt: "Image 2",
-    description: "Graduate Student Panel",
-  },
-  {
-    pictures: grid5,
-    alt: "Image 1",
-    description: "test",
-  },
-  {
-    pictures: grid6,
-    alt: "Image 4",
+    alt: "gradStudentPanel 2",
     description: "Graduate Student Panel 2",
   },
   {
-    pictures: grid7,
-    alt: "Image 5",
+    pictures: grid5,
+    alt: "PTGroupPhoto",
     description: "PT Group Photo",
   },
   {
-    pictures: grid8,
-    alt: "Image 8",
+    pictures: grid6,
+    alt: "bingoGroupPhoto",
     description: "Bingo Group Photo",
   },
   {
+    pictures: grid7,
+    alt: "namiMumuPtso1",
+    description: "Nami Mumu Ptso 1",
+  },
+  {
+    pictures: grid8,
+    alt: "applicationProcessChairs",
+    description: "Application Process Chairs",
+  },
+  {
     pictures: grid9,
-    alt: "Image 3",
-    description: "Nami Mumu PTSO 1",
+    alt: "PTDemo",
+    description: "Physical Therapy Demo",
   },
   {
     pictures: grid10,
-    alt: "Image 10",
-    description: "Social Bingo",
+    alt: "PT",
+    description: "Physical Therapy",
   },
   {
     pictures: grid11,
-    alt: "Image 9",
-    description: "PTSO Board 2",
+    alt: "mumuNamiPTSO",
+    description: "Mumu Nami PTSO",
   },
 
   {
     pictures: grid12,
-    alt: "Image 9",
-    description: "test",
+    alt: "socialBingo",
+    description: "Social Bingo",
   },
   {
     pictures: grid13,
-    alt: "Image 11",
-    description: "PT Demo",
+    alt: "gradStudentPanel",
+    description: "Grad Student Panel",
   },
 
   {
     pictures: grid14,
-    alt: "Image 7",
-    description: "PT Group Photo",
+    alt: "PTSOBoard2",
+    description: "PTSO Board 2",
   },
 
   {
     pictures: grid15,
-    alt: "Image 15",
-    description: " Winter Bingo Winners",
+    alt: "bingoWinners",
+    description: "Bingo Winners",
   },
 ];

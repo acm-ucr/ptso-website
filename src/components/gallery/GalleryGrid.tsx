@@ -18,15 +18,15 @@ export default function GalleryGrid() {
           ))}
       </div>
       <div className="grid w-full grid-cols-12 gap-4">
-        <div className="col-span-3 grid gap-4">
-          <div className="">
+        <div className="col-span-3 grid h-full gap-4">
+          <div className="h-1/2">
             <ImageCard
               image={picturesData[3].pictures}
               alt={picturesData[3].alt}
               description={picturesData[3].description}
             />
           </div>
-          <div className="">
+          <div className="h-1/2">
             <ImageCard
               image={picturesData[4].pictures}
               alt={picturesData[4].alt}
@@ -34,28 +34,32 @@ export default function GalleryGrid() {
             />
           </div>
         </div>
-        <div className="col-span-5 flex flex-col gap-4">
+        <div className="col-span-5 grid grid-rows-3 gap-4">
           {picturesData
             .slice(5, 8)
             .map(({ pictures, alt, description }, index) => (
-              <ImageCard
-                key={index}
-                image={pictures}
-                alt={alt}
-                description={description}
-              />
+              <div className="row-span-1">
+                <ImageCard
+                  key={index}
+                  image={pictures}
+                  alt={alt}
+                  description={description}
+                />
+              </div>
             ))}
         </div>
-        <div className="col-span-4 flex flex-col gap-4">
+        <div className="col-span-4 grid grid-rows-3 gap-4">
           {picturesData
             .slice(8, 11)
             .map(({ pictures, alt, description }, index) => (
-              <ImageCard
-                key={index}
-                image={pictures}
-                alt={alt}
-                description={description}
-              />
+              <div className="row-span-1">
+                <ImageCard
+                  key={index}
+                  image={pictures}
+                  alt={alt}
+                  description={description}
+                />
+              </div>
             ))}
         </div>
       </div>
@@ -65,24 +69,28 @@ export default function GalleryGrid() {
           {picturesData
             .slice(11, 13)
             .map(({ pictures, alt, description }, index) => (
-              <ImageCard
-                key={index}
-                image={pictures}
-                alt={alt}
-                description={description}
-              />
+              <div className="h-1/2">
+                <ImageCard
+                  key={index}
+                  image={pictures}
+                  alt={alt}
+                  description={description}
+                />
+              </div>
             ))}
         </div>
         <div className="col-span-2 grid h-full w-full grid-cols-1 gap-4">
           {picturesData
             .slice(13, 15)
             .map(({ pictures, alt, description }, index) => (
-              <ImageCard
-                key={index}
-                image={pictures}
-                alt={alt}
-                description={description}
-              />
+              <div className="h-1/2">
+                <ImageCard
+                  key={index}
+                  image={pictures}
+                  alt={alt}
+                  description={description}
+                />
+              </div>
             ))}
         </div>
         <div className="col-span-2 grid h-full w-full gap-4">
