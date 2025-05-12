@@ -11,13 +11,13 @@ import { motion } from "framer-motion";
 
 const hoverScale = {
   whileHover: { scale: 1.05 },
-  transition: { duration: 0.2, type: "tween" }
+  transition: { duration: 0.2, type: "tween" },
 };
 
 const navItemAnimation = {
   initial: { opacity: 0, y: -10 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.3 }
+  transition: { duration: 0.3 },
 };
 
 const Navbar = () => {
@@ -28,13 +28,12 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="text-ptso-purple-accent bg-ptso-blue-primary"
     >
-      {/* Desktop Navigation */}
       <div className="hidden items-center p-4 md:flex">
         <motion.div {...navItemAnimation}>
           <Link href="/" className="mr-8 flex items-center">
@@ -48,7 +47,10 @@ const Navbar = () => {
             <motion.div
               key={index}
               {...navItemAnimation}
-              transition={{ ...navItemAnimation.transition, delay: index * 0.1 }}
+              transition={{
+                ...navItemAnimation.transition,
+                delay: index * 0.1,
+              }}
             >
               <Link
                 href={link}
@@ -60,17 +62,16 @@ const Navbar = () => {
           ))}
         </div>
 
-        <motion.div className="w-1/3 text-right origin-right" {...hoverScale}>
+        <motion.div className="w-1/3 origin-right text-right" {...hoverScale}>
           <Link
             href="https://www.instagram.com/ucr_ptso/"
-            className="inline-block rounded-full bg-ptso-pink-secondary px-6 py-2 text-white hover:bg-ptso-pink-secondary/90"
+            className="bg-ptso-pink-secondary hover:bg-ptso-pink-secondary/90 inline-block rounded-full px-6 py-2 text-white"
           >
             JOIN US
           </Link>
         </motion.div>
       </div>
 
-      {/* Mobile Navigation */}
       <div className="md:hidden">
         <div className="flex items-center justify-between px-4 pt-4">
           <motion.div {...navItemAnimation}>
@@ -84,9 +85,9 @@ const Navbar = () => {
               />
             </Link>
           </motion.div>
-          
-          <motion.div 
-            onClick={handleClick} 
+
+          <motion.div
+            onClick={handleClick}
             className="hover:cursor-pointer"
             {...hoverScale}
           >
@@ -110,9 +111,9 @@ const Navbar = () => {
                 <Link
                   href={link}
                   onClick={closeMenu}
-                  className={`pb-1 border-b ${
-                    pathname === link 
-                      ? "border-ptso-pink-secondary text-ptso-pink-secondary font-semibold" 
+                  className={`border-b pb-1 ${
+                    pathname === link
+                      ? "border-ptso-pink-secondary text-ptso-pink-secondary font-semibold"
                       : "border-ptso-purple-accent text-ptso-purple-accent"
                   }`}
                 >
@@ -120,7 +121,7 @@ const Navbar = () => {
                 </Link>
               </motion.div>
             ))}
-            
+
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: isOpen ? 1 : 0 }}
@@ -128,7 +129,7 @@ const Navbar = () => {
             >
               <Link
                 href="https://www.instagram.com/ucr_ptso/"
-                className="rounded-full bg-ptso-pink-secondary px-6 py-2 text-white hover:bg-ptso-pink-secondary/90"
+                className="bg-ptso-pink-secondary hover:bg-ptso-pink-secondary/90 rounded-full px-6 py-2 text-white"
                 onClick={closeMenu}
               >
                 JOIN US
