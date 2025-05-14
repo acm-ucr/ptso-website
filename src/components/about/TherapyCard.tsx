@@ -30,7 +30,7 @@ const TherapyCard = ({
       style={{ position: "relative", transformStyle: "preserve-3d" }}
     >
       <div
-        className={`${color} mx-auto flex w-3/4 flex-col items-center justify-between space-y-4 rounded-xl`}
+        className={`${color} cursor-pointer mx-auto flex w-3/4 flex-col items-center justify-between space-y-4 rounded-xl`}
         style={{ position: "relative", transformStyle: "preserve-3d" }}
       >
         <div
@@ -60,7 +60,7 @@ const TherapyCard = ({
             height={60}
             className="object-contain"
           />
-          <div className="mb-24 text-center font-serif text-white">
+          <div className="text-center font-serif text-white">
             {description}
           </div>
         </div>
