@@ -13,8 +13,8 @@ const CurrentBoard = () => {
     <div className="mt-8 justify-items-center">
       <Year text="'24-'25" />
       <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
         <Image
