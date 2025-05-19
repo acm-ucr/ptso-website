@@ -11,7 +11,7 @@ const Board = () => {
       <Header title="Board" />
       <CurrentBoard />
       <OldBoard />
-      <Image src={waves} alt="Board Waves" />
+      <Image src={waves} alt="Board Waves" className="w-full" />
       <Founders />
     </div>
   );
