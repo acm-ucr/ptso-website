@@ -31,7 +31,6 @@ const Redirect = ({ statusCode }: redirectProps) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true }}
         className="flex h-[72vh] flex-col items-center justify-center text-center md:min-h-screen"
       >
         <div className="text-ptso-purple-secondary font-beVietnamPro mb-4 border-b-5 text-9xl font-extrabold">
