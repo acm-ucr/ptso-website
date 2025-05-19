@@ -25,13 +25,13 @@ const ValueList = () => {
             whileInView={{ scale: 1, opacity: 1, y: 30, x: 0 }}
             transition={{ duration: 0.8, delay: index * 0.05 }}
             viewport={{ once: true }}
+            key={index}
           >
             <Value
               name={name}
               image={image}
               alt={alt}
               description={description}
-              key={index}
             />
           </motion.div>
         ))}
