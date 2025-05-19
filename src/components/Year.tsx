@@ -6,7 +6,7 @@ const Year = ({ text }: yearProps) => {
   return (
     <div
       className={
-        "text-ptso-pink-accent font-beVietnamPro mx-auto w-7/10 text-4xl font-bold"
+        "text-ptso-pink-accent font-beVietnamPro mx-auto mb-4 w-7/10 text-3xl font-bold"
       }
     >
       {text}
