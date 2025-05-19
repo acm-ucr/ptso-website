@@ -1,14 +1,28 @@
+"use client";
 import Image from "next/image";
 import { founders } from "@/data/Founders";
 import Title from "@/components/Title";
+import { motion } from "motion/react";
 
 const Founders = () => {
   return (
     <div className="bg-ptso-pink-light flex-col justify-items-center pb-8">
-      <Title text="Our Founders" />
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <Title text="Our Founders" />
+      </motion.div>
       <div className="w-2/3 justify-between sm:flex">
         {founders.map(({ image, name, alt }, index) => (
-          <div className="m-6 flex-col text-center md:text-2xl" key={index}>
+          <motion.div
+            className="m-6 flex-col text-center md:text-2xl"
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Image
               src={image}
               alt={alt}
@@ -17,10 +31,15 @@ const Founders = () => {
               className="mb-2"
             />
             {name}
-          </div>
+          </motion.div>
         ))}
       </div>
-      <div className="w-4/5 text-center">
+      <motion.div
+        className="font-quicksand w-4/5 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
         When we founded the Pre-Therapy Student Organization (PTSO), we wanted
         to create something more than just a club—we wanted a community. As
         students navigating the complex journey toward careers in therapy, we
@@ -32,7 +51,7 @@ const Founders = () => {
         speakers, and volunteer experiences, we have worked to make PTSO a place
         where aspiring therapists can find guidance, encouragement, and a sense
         of belonging.
-      </div>
+      </motion.div>
     </div>
   );
 };
