@@ -23,8 +23,8 @@ const ValueList = () => {
         
         {values.map(({ name, image, alt, description }, index) => (
           <motion.div
-          initial={{scale: 0, opacity: 0}}
-          whileInView={{scale: 1, opacity: 1}}
+          initial={{scale: 0.5, opacity: 0, y:0}}
+          whileInView={{scale: 1, opacity: 1, y:20}}
           transition={{duration: 0.7, delay: index*0.05}}
           viewport={{once: true}}
           >
