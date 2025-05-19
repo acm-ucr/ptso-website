@@ -27,22 +27,6 @@ const OurValues = () => {
           ))}
         </div>
       </div>
-      {/*<div className="flex flex-col items-center justify-center sm:p-10 py-20 md:p-20 md:py-45 lg:py-30 sm:py-20 md:flex-row lg:space-x-20 xl:py-70">
-        <div className="mb-8 w-3/4 lg:w-7/16">
-          <OurValuesText />
-        </div>
-        <div className="grid grid-cols-9 md:grid-cols-5">
-          {values.map(({ image, alt, className }, index) => (
-            <div className={className} key={index}>
-              <Image
-                src={image}
-                alt={alt}
-                className="w-16 sm:w-20 md:w-3/5 lg:w-4/5"
-              />{" "}
-            </div>
-          ))}
-        </div>
-      </div>*/}
     </div>
   );
 };
