@@ -5,9 +5,11 @@ interface MemberProps {
 
 const BoardMember = ({ name, position }: MemberProps) => {
   return (
-    <div className="w-1/3 flex-col justify-items-center space-y-2">
-      <p className="font-beVietnamPro text-2xl">{name}</p>
-      <p className="font-beVietnamPro text-ptso-purple-secondary text-lg">
+    <div className="w-1/2 flex-col justify-items-center px-8 py-3 text-center md:w-1/3 md:px-3 md:py-4">
+      <div className="font-average text-md text-ptso-purple-accent md:text-2xl">
+        {name}
+      </div>
+      <p className="font-beVietnamPro text-ptso-purple-secondary text-xs md:text-lg">
         {position}
       </p>
     </div>

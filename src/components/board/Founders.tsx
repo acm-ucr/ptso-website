@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { founders } from "@/data/Founders";
 import Title from "@/components/Title";
+
 const Founders = () => {
   return (
-    <div className="flex-col justify-items-center">
+    <div className="bg-ptso-pink-light flex-col justify-items-center pb-8">
       <Title text="Our Founders" />
       <div className="w-2/3 justify-between sm:flex">
         {founders.map(({ image, name, alt }, index) => (
