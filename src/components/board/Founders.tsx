@@ -28,7 +28,7 @@ const Founders = () => {
               alt={alt}
               width={300}
               height={300}
-              className="mb-2"
+              className="mb-2 w-full px-8"
             />
             {name}
           </motion.div>
