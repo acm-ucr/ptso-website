@@ -1,6 +1,6 @@
 const Description = () => {
   return (
-    <p className="text-ptso-purple-accent font-quicksand mx-auto h-auto w-5/6 text-center text-2xl">
+    <p className="text-ptso-purple-accent font-quicksand mx-auto h-auto w-5/6 text-center text-xl lg:text-2xl">
       We are committed to fostering a supportive community at UCR for
       individuals interested in pursuing careers in therapy. Whether members
       aspire to work in physical therapy, occupational therapy, counseling, or
