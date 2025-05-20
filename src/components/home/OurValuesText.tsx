@@ -4,13 +4,12 @@ import valueStarGroup from "@/public/assets/home/shapes/valueStarGroup.webp";
 
 const OurValuesText = () => {
   return (
-    <div className="w-7/25">
-      <div className="flex items-center">
+    <div className="">
+      <div className="flex items-center justify-center md:justify-start">
         <Image src={valueStarGroup} alt="Stars" width={50} className="z-5" />
-
         <Title text="Our Values" />
       </div>
-      <p className="font-quicksand mt-3 ml-5 text-xl">
+      <p className="font-quicksand mx-5 mt-3 text-center text-sm md:ml-5 md:text-left md:text-lg lg:text-xl">
         At PTSO, we are dedicated to fostering a supportive and inclusive
         community for students pursuing careers in therapy, emphasizing
         collaboration, professional growth, and lifelong learning. Our values
