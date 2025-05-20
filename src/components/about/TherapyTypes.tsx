@@ -25,6 +25,7 @@ const TherapyTypes = () => {
             key={index}
             image={therapy.image}
             name={therapy.name}
+            description={therapy.description}
             alt={therapy.alt}
             color={therapy.color}
           />
