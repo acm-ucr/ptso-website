@@ -6,7 +6,7 @@ const Title = ({ text }: titleProps) => {
   return (
     <div
       className={
-        "text-ptso-pink-accent font-beVietnamPro text-center text-5xl font-bold"
+        "text-ptso-pink-accent font-beVietnamPro text-center text-3xl md:text-4xl font-bold"
       }
     >
       {text}

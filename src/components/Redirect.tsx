@@ -33,20 +33,20 @@ const Redirect = ({ statusCode }: redirectProps) => {
         transition={{ duration: 1 }}
         className="flex h-[72vh] flex-col items-center justify-center text-center md:min-h-screen"
       >
-        <div className="text-ptso-purple-secondary font-beVietnamPro mb-4 border-b-5 text-9xl font-extrabold">
+        <div className="text-ptso-purple-secondary font-beVietnamPro mb-4 border-b-5 text-7xl sm:text-8xl md:text-9xl font-extrabold">
           {statusCode}
         </div>
 
-        <div className="text-ptso-purple-accent mb-8 text-2xl">
+        <div className="text-ptso-purple-accent mb-8 text-lg sm:text-xl md:text-2xl">
           Oops! The page you are looking for cannot be found.
         </div>
 
         <Link
           href="/"
-          className="bg-ptso-purple-secondary z-10 inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-xl text-white transition-all duration-300 ease-in-out hover:scale-105"
+          className="bg-ptso-purple-secondary z-10 inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-base sm:text-lg md:text-xl text-white transition-all duration-300 ease-in-out hover:scale-105"
         >
           Return home
-          <div className="text-xl"> →</div>
+          <div className="text-base sm:text-lg md:text-xl"> →</div>
         </Link>
       </motion.div>
 

@@ -17,7 +17,7 @@ const Founders = () => {
       <div className="w-2/3 justify-between sm:flex">
         {founders.map(({ image, name, alt }, index) => (
           <motion.div
-            className="m-6 flex-col text-center md:text-2xl"
+            className="m-6 flex-col text-center text-lg sm:text-xl md:text-2xl"
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -35,7 +35,7 @@ const Founders = () => {
         ))}
       </div>
       <motion.div
-        className="font-quicksand w-4/5 text-center text-lg md:text-xl"
+        className="font-quicksand w-4/5 text-center text-base sm:text-lg md:text-xl"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}

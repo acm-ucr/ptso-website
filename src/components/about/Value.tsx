@@ -14,10 +14,10 @@ const Value = ({ name, image, alt, description }: ValueProps) => {
       <Image src={image} alt={alt} />
 
       <div className="flex-col space-y-5">
-        <div className="font-quicksand text-ptso-purple-accent text-3xl font-semibold md:text-4xl">
+        <div className="font-quicksand text-ptso-purple-accent text-2xl sm:text-3xl font-semibold md:text-4xl">
           {name}
         </div>
-        <div className="font-quicksand text-ptso-purple-accent text-lg md:text-xl">
+        <div className="font-quicksand text-ptso-purple-accent text-base sm:text-lg md:text-xl">
           {description}
         </div>
       </div>

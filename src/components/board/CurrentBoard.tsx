@@ -25,7 +25,7 @@ const CurrentBoard = () => {
       </motion.div>
 
       <motion.p
-        className="font-average md:text-md w-2/3 py-3 text-center text-xs md:w-1/2 md:py-5 md:text-sm"
+        className="font-average md:text-md w-2/3 py-3 text-center text-xs sm:text-sm md:w-1/2 md:py-5 md:text-base"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
