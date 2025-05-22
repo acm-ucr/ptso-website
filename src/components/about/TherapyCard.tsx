@@ -44,7 +44,7 @@ const TherapyCard = ({
             height={80}
             className="mt-24 object-contain"
           />
-          <div className="font-beVietnamPro mb-24 text-center text-lg sm:text-xl md:text-2xl text-white">
+          <div className="font-beVietnamPro mb-24 text-center text-lg text-white sm:text-xl md:text-2xl">
             {name}
           </div>
         </div>
