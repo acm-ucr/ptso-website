@@ -10,7 +10,7 @@ import { motion } from "motion/react";
 
 const CurrentBoard = () => {
   return (
-    <div className="mt-8 justify-items-center">
+    <div className="mt-8 flex flex-col items-center">
       <Year text="'24-'25" />
       <motion.div
         initial={{ opacity: 0, y: -20 }}
