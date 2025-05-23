@@ -19,16 +19,18 @@ const TherapyTypes = () => {
         process.
       </p>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="flex flex-wrap justify-center gap-4">
         {therapyTypes.map((therapy, index) => (
-          <TherapyCard
-            key={index}
-            image={therapy.image}
-            name={therapy.name}
-            description={therapy.description}
-            alt={therapy.alt}
-            color={therapy.color}
-          />
+          <div className="flex w-2/4 justify-center md:w-5/11 lg:w-3/10">
+            <TherapyCard
+              key={index}
+              image={therapy.image}
+              name={therapy.name}
+              description={therapy.description}
+              alt={therapy.alt}
+              color={therapy.color}
+            />
+          </div>
         ))}
       </div>
     </div>
