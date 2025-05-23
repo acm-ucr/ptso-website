@@ -13,7 +13,7 @@ const ValueList = () => {
         className="w-full object-cover"
       />
 
-      <div className="-mt-4 flex-col bg-[#FFF4F4] px-8 pt-8">
+      <div className="bg-ptso-pink-light -mt-4 flex-col px-8 pt-8">
         {values.map(({ name, image, alt, description }, index) => (
           <Value
             name={name}
