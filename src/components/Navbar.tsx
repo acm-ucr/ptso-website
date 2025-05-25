@@ -54,7 +54,7 @@ const Navbar = () => {
             >
               <Link
                 href={link}
-                className={`${pathname === link ? "text-ptso-pink-secondary font-semibold" : ""}`}
+                className={`hover:underline ${pathname === link ? "text-ptso-pink-secondary font-semibold" : ""}`}
               >
                 {name}
               </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <motion.div className="w-1/3 origin-right text-right" {...hoverScale}>
+        <motion.div className="ml-auto text-right" {...hoverScale}>
           <Link
             href="https://www.instagram.com/ucr_ptso/"
             className="bg-ptso-pink-secondary hover:bg-ptso-pink-secondary/90 inline-block rounded-full px-6 py-2 text-white"
@@ -75,7 +75,7 @@ const Navbar = () => {
       <div className="md:hidden">
         <div className="flex items-center justify-between px-4 pt-4">
           <motion.div {...navItemAnimation}>
-            <Link href="\" onClick={closeMenu}>
+            <Link href="/" onClick={closeMenu}>
               <Image
                 src={ptsoLogo}
                 alt="PTSO Logo"
@@ -126,6 +126,7 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: isOpen ? 1 : 0 }}
               className="mt-2"
+              {...hoverScale}
             >
               <Link
                 href="https://www.instagram.com/ucr_ptso/"
@@ -145,4 +146,5 @@ const Navbar = () => {
     </motion.div>
   );
 };
+
 export default Navbar;
