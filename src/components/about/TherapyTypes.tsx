@@ -4,7 +4,7 @@ import { therapyTypes } from "@/data/TherapyTypes";
 
 const TherapyTypes = () => {
   return (
-    <div className="mx-auto w-11/12 max-w-6xl pt-4 pb-8">
+    <div className="pt-4 pb-8">
       <Title text="Therapy Types" />
       <p className="font-quicksand mx-auto my-8 h-auto w-5/6 text-center text-xl text-black">
         Therapy comes in many forms, each designed to support individuals in

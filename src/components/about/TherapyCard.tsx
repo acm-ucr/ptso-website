@@ -30,7 +30,7 @@ const TherapyCard = ({
       style={{ position: "relative", transformStyle: "preserve-3d" }}
     >
       <div
-        className={`${color} mx-auto flex w-3/4 cursor-pointer flex-col items-center justify-between space-y-4 rounded-xl`}
+        className={`${color} flex cursor-pointer flex-col items-center justify-center space-y-4 space-x-4 rounded-xl`}
         style={{ position: "relative", transformStyle: "preserve-3d" }}
       >
         <div
@@ -50,7 +50,7 @@ const TherapyCard = ({
         </div>
 
         <div
-          className={`${color} absolute top-5 flex h-3/4 flex-col items-center space-y-3 rounded-xl pr-2 pb-5 pl-2`}
+          className={`${color} absolute top-5 flex flex-col items-center rounded-xl pr-2 pb-5 pl-2`}
           style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
         >
           <Image
