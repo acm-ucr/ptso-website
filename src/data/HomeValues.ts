@@ -15,26 +15,26 @@ export const values: value[] = [
   {
     image: Collaboration,
     alt: "Collaboration",
-    className: "col-span-3 md:col-span-2 md:col-start-3 place-items-center",
+    className: "col-span-3 md:col-span-2 md:col-start-3 flex justify-center",
   },
   {
     image: Growth,
     alt: "Growth",
-    className: "col-span-3 md:col-span-2 md:col-start-2 place-items-center",
+    className: "col-span-3 md:col-span-2 md:col-start-2 flex justify-center",
   },
   {
     image: Integrity,
     alt: "Integrity",
-    className: "col-span-3 md:col-span-2 place-items-center",
+    className: "col-span-3 md:col-span-2 flex justify-center",
   },
   {
     image: Diversity,
     alt: "Diversity",
-    className: "col-span-2 col-start-3 md:col-span-2 place-items-center",
+    className: "col-span-2 col-start-3 md:col-span-2 flex justify-center",
   },
   {
     image: Advocacy,
     alt: "Advocacy",
-    className: "col-span-2 col-start-6 md:col-start-3 place-items-center",
+    className: "col-span-2 col-start-6 md:col-start-3 flex justify-center",
   },
 ];
