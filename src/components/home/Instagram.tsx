@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import circleLogo from "@/public/assets/home/circleLogo.webp";
 import vectorGroup from "@/public/assets/home/background/VectorGroup.svg";
-
 import { useEffect } from "react";
 import { AiFillInstagram } from "react-icons/ai";
 
@@ -24,15 +23,20 @@ const Instagram = () => {
   }, []);
 
   return (
-    <div className=" mb-20 flex w-auto flex-row p-8 mt-20 ">
+    <div className="relative bg-ptso-pink-primary w-screen sm:h-[125vh] md:h-[115vh] bottom-[37vh] -z-10">
+    <div className="relative top-[30vh] mb-20 flex flex-row p-8 mt-20 ">
       <Image
         src={vectorGroup}
         alt="Vector Group"
-        className="absolute w-3/5 translate-y-[-30%] translate-x-[10%]"
+        className="absolute w-1/2 translate-y-[-30%] translate-x-[10%] hidden lg:block"
       />
-      <div data-behold-id="4u02SoeevQeMHpLj9hs8"/>
-      <div className="flex flex-col items-center justify-center">
-        <Image src={circleLogo} alt="Circle Logo" className="w-3/5" />
+      <div
+  className="w-full scale-70 sm:scale-80 md:scale-100"
+>
+  <div data-behold-id="4u02SoeevQeMHpLj9hs8" />
+</div>
+      <div className="flex flex-col items-center justify-center lg:mr-20">
+        <Image src={circleLogo} alt="Circle Logo" className="w-7/12 md:w-9/12" />
         <Link
           href="https://www.instagram.com/ucr_ptso/"
           target="_blank"
@@ -42,6 +46,7 @@ const Instagram = () => {
           Follow on Instagram
         </Link>
       </div>
+    </div>
     </div>
   );
 };
