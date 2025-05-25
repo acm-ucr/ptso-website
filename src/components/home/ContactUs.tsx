@@ -99,7 +99,7 @@ const ContactUs = () => {
                 ></textarea>
                 <motion.div whileHover={{ scale: 1.05 }}>
                   <div className="flex justify-center p-3">
-                    <button className="bg-ptso-blue-dark w-1/3 cursor-pointer rounded-2xl p-3 text-white">
+                    <button className="bg-ptso-blue-dark hover:bg-ptso-blue-dark/90 w-1/3 cursor-pointer rounded-2xl p-3 text-white">
                       Submit
                     </button>
                   </div>
