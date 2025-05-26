@@ -28,40 +28,36 @@ const TherapyCard = ({
       animate={{ rotateY: flipped ? 180 : 0 }}
       onClick={() => setFlipped((prevState) => !prevState)}
       style={{ position: "relative", transformStyle: "preserve-3d" }}
+      className="h-full"
     >
       <div
-        className={`${color} flex cursor-pointer flex-col items-center justify-center space-y-4 space-x-4 rounded-xl`}
-        style={{ position: "relative", transformStyle: "preserve-3d" }}
+        className={`${color} absolute mx-10 flex h-full w-3/4 flex-col items-center space-y-4 rounded-xl`}
+        style={{ backfaceVisibility: "hidden" }}
       >
-        <div
-          className={`${color} flex flex-col items-center space-y-4`}
-          style={{ backfaceVisibility: "hidden" }}
-        >
-          <Image
-            src={image}
-            alt={alt}
-            width={80}
-            height={80}
-            className="mt-24 object-contain"
-          />
-          <div className="font-beVietnamPro mb-24 text-center text-2xl text-white">
-            {name}
-          </div>
+        <Image
+          src={image}
+          alt={alt}
+          width={80}
+          height={80}
+          className="mt-24 object-contain"
+        />
+        <div className="font-beVietnamPro mb-24 text-center text-2xl text-white">
+          {name}
         </div>
+      </div>
 
-        <div
-          className={`${color} absolute top-5 flex flex-col items-center rounded-xl pr-2 pb-5 pl-2`}
-          style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
-        >
-          <Image
-            src={image}
-            alt={alt}
-            width={60}
-            height={60}
-            className="object-contain"
-          />
-          <div className="text-center font-serif text-white">{description}</div>
-        </div>
+      <div
+        className={`${color} top-5 flex flex-col items-center space-y-4 rounded-xl pr-2 pb-5 pl-2`}
+        style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
+      >
+        <Image
+          src={image}
+          alt={alt}
+          width={60}
+          height={60}
+          className="object-contain"
+        />
+        <div className="text-center font-serif text-white">{description}</div>
       </div>
     </motion.div>
   );
