@@ -4,6 +4,7 @@
 @import "tailwindcss";
 
 @theme {
+  --color-ptso-blue-soft: #d0e7f9;
   --color-ptso-blue-light: #ecf5fd;
   --color-ptso-blue-primary: #daedfe;
   --color-ptso-blue-secondary: #b6cde4;

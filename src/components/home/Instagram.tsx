@@ -23,30 +23,33 @@ const Instagram = () => {
   }, []);
 
   return (
-    <div className="relative bg-ptso-pink-primary w-screen sm:h-[125vh] md:h-[115vh] bottom-[37vh] -z-10">
-    <div className="relative top-[30vh] mb-20 flex flex-row p-8 mt-20 ">
-      <Image
-        src={vectorGroup}
-        alt="Vector Group"
-        className="absolute w-1/2 translate-y-[-30%] translate-x-[10%] hidden lg:block"
-      />
-      <div
-  className="w-full scale-70 sm:scale-80 md:scale-100"
->
-  <div data-behold-id="4u02SoeevQeMHpLj9hs8" />
-</div>
-      <div className="flex flex-col items-center justify-center lg:mr-20">
-        <Image src={circleLogo} alt="Circle Logo" className="w-7/12 md:w-9/12" />
-        <Link
-          href="https://www.instagram.com/ucr_ptso/"
-          target="_blank"
-          className="bg-ptso-pink-accent mt-4 flex cursor-pointer items-center gap-2 rounded-xl px-4 py-3 text-white transition ease-in-out hover:-translate-y-1"
-        >
-          <AiFillInstagram size={20} />
-          Follow on Instagram
-        </Link>
+    <div className="bg-ptso-pink-primary relative bottom-[37vh] -z-10 h-[110vh] w-screen sm:h-[120vh] md:h-[115vh]">
+      <div className="relative top-[25vh] mt-20 mb-20 flex flex-row p-8 md:top-[35vh]">
+        <Image
+          src={vectorGroup}
+          alt="Vector Group"
+          className="absolute hidden w-1/2 translate-x-[10%] translate-y-[-30%] lg:block"
+        />
+        <div className="w-full scale-70 sm:scale-80 md:scale-100">
+          <div data-behold-id="4u02SoeevQeMHpLj9hs8" />
+        </div>
+        <div className="flex flex-col items-center justify-center lg:mr-20">
+          <Image
+            src={circleLogo}
+            alt="Circle Logo"
+            className="w-7/12 md:w-9/12"
+          />
+          <p className="mt-2 text-base sm:text-lg md:text-xl">@ucr_ptso</p>
+          <Link
+            href="https://www.instagram.com/ucr_ptso/"
+            target="_blank"
+            className="bg-ptso-pink-accent mt-4 flex cursor-pointer items-center gap-2 rounded-3xl px-4 py-3 text-white transition ease-in-out hover:-translate-y-1"
+          >
+            <AiFillInstagram size={20} />
+            Follow on Instagram
+          </Link>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

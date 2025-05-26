@@ -7,6 +7,7 @@ declare global {
 import { useState } from "react";
 import Image from "next/image";
 import vector6 from "@/public/assets/home/background/vector6.svg";
+
 import contactUs from "@/public/assets/home/contactUs.webp";
 import ptsoLogoLarge from "@/public/ptsoLogoLarge.webp";
 import Title from "@/components/Title";
@@ -17,7 +18,7 @@ const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <>
+    <div className="bg-ptso-blue-primary">
       <iframe
         name="hidden_iframe"
         id="hidden_iframe"
@@ -34,7 +35,7 @@ const ContactUs = () => {
         <Title text="Contact Us" />
       </div>
 
-      <div className="relative mb-5 flex flex-col md:flex-row">
+      <div className="relative flex flex-col md:flex-row">
         <div className="flex items-center justify-center md:w-1/2">
           <div className="flex md:flex-col md:gap-6">
             <div className="relative bottom-10 hidden md:block">
@@ -109,7 +110,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
