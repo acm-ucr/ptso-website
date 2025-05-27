@@ -43,6 +43,7 @@ const TherapyCard = ({
         />
         <div className="font-beVietnamPro mb-24 text-center text-2xl text-white">
           {name}
+
         </div>
       </div>
 

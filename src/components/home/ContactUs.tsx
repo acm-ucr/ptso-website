@@ -67,7 +67,7 @@ const ContactUs = () => {
                 onSubmit={() => (window.submitted = true)}
                 target="hidden_iframe"
               >
-                <div className="font-quicksand block text-3xl font-bold md:text-2xl">
+                <div className="font-quicksand block text-2xl font-bold">
                   Name
                 </div>
                 <input
@@ -78,7 +78,7 @@ const ContactUs = () => {
                   required
                 />
 
-                <div className="font-quicksand mt-4 block text-3xl font-bold md:text-2xl">
+                <div className="font-quicksand mt-4 block text-2xl font-bold">
                   Email
                 </div>
                 <input
@@ -89,7 +89,7 @@ const ContactUs = () => {
                   required
                 />
 
-                <div className="font-quicksand mt-4 block text-3xl font-bold md:text-2xl">
+                <div className="font-quicksand mt-4 block text-2xl font-bold">
                   Message
                 </div>
                 <textarea
@@ -99,7 +99,7 @@ const ContactUs = () => {
                 ></textarea>
                 <motion.div whileHover={{ scale: 1.05 }}>
                   <div className="flex justify-center p-3">
-                    <button className="bg-ptso-blue-dark w-1/3 cursor-pointer rounded-2xl p-3 text-white">
+                    <button className="bg-ptso-blue-dark hover:bg-ptso-blue-dark/90 w-1/3 cursor-pointer rounded-2xl p-3 text-white">
                       Submit
                     </button>
                   </div>
