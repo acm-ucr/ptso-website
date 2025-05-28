@@ -19,7 +19,7 @@ const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <div className="">
+    <>
       <iframe
         name="hidden_iframe"
         id="hidden_iframe"
@@ -32,7 +32,7 @@ const ContactUs = () => {
         }}
       ></iframe>
       <Image
-        className="w-full"
+        className="mx-auto w-5/6"
         src={opportunitiesText}
         alt="Contact Us Top Wave"
       />
@@ -126,7 +126,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
