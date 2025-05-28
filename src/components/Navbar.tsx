@@ -28,12 +28,7 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className="text-ptso-purple-accent bg-ptso-blue-primary"
-    >
+    <div className="text-ptso-purple-accent bg-ptso-blue-primary">
       <div className="hidden items-center p-4 md:flex">
         <motion.div {...navItemAnimation}>
           <Link href="/" className="mr-8 flex items-center">
@@ -143,7 +138,7 @@ const Navbar = () => {
       <div className="pt-4 md:pt-0">
         <Divider />
       </div>
-    </motion.div>
+    </div>
   );
 };
 
