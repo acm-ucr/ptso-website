@@ -29,7 +29,7 @@ const OurValues = () => {
           </div>
         </div>
       </div>
-      <div className="bg-ptso-pink-primary absolute -z-50 h-[45vh] w-screen -translate-y-55 lg:h-[44vh]"></div>
+      <div className="bg-ptso-pink-primary absolute -z-50 h-[45vh] w-full -translate-y-55 lg:h-[44vh]"></div>
     </>
   );
 };

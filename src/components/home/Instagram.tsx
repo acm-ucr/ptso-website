@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import circleLogo from "@/public/assets/home/circleLogo.webp";
-import vectorGroup from "@/public/assets/home/background/VectorGroup.svg";
+import vectorGroup from "@/public/assets/home/background/instaBackground.svg";
 import instaBottomWave from "@/public/assets/home/background/instaBottomWave.svg";
 import { useEffect } from "react";
 import { AiFillInstagram } from "react-icons/ai";
@@ -26,7 +26,7 @@ const Instagram = () => {
 
   return (
     <>
-      <div className="bg-ptso-pink-primary relative z-50 w-screen">
+      <div className="bg-ptso-pink-primary relative z-50 w-full">
         <div className="relative flex flex-row p-8 sm:mt-20">
           <Image
             src={vectorGroup}
@@ -59,7 +59,7 @@ const Instagram = () => {
       <Image
         src={instaBottomWave}
         alt="Instagram Bottom Wave"
-        className="-z-50 -translate-y-1"
+        className="-z-50 -mt-1"
       ></Image>
     </>
   );
