@@ -59,7 +59,7 @@ const Instagram = () => {
       <Image
         src={instaBottomWave}
         alt="Instagram Bottom Wave"
-        className="-z-50 -mt-1 w-full"
+        className="w-full"
       ></Image>
     </>
   );

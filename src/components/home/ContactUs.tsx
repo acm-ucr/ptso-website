@@ -87,7 +87,7 @@ const ContactUs = () => {
                     Name
                   </div>
                   <input
-                    name="entry.1922039377"
+                    name="entry.678487467"
                     type="text"
                     placeholder="Name"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-3"
@@ -98,7 +98,7 @@ const ContactUs = () => {
                     Email
                   </div>
                   <input
-                    name="entry.190572232"
+                    name="entry.2011894593"
                     type="text"
                     placeholder="Email"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-3"
@@ -109,7 +109,7 @@ const ContactUs = () => {
                     Message
                   </div>
                   <textarea
-                    name="entry.1180546097"
+                    name="entry.686315706"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-6"
                     required
                   ></textarea>
