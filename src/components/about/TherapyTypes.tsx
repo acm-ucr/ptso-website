@@ -4,7 +4,7 @@ import { therapyTypes } from "@/data/TherapyTypes";
 
 const TherapyTypes = () => {
   return (
-    <div className="mx-auto w-11/12 max-w-6xl pt-4 pb-8">
+    <div className="pt-4 pb-8">
       <Title text="Therapy Types" />
       <p className="font-quicksand mx-auto my-8 h-auto w-5/6 text-center text-base text-black sm:text-lg md:text-xl">
         Therapy comes in many forms, each designed to support individuals in
@@ -19,16 +19,18 @@ const TherapyTypes = () => {
         process.
       </p>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="flex flex-wrap justify-center gap-4">
         {therapyTypes.map((therapy, index) => (
-          <TherapyCard
-            key={index}
-            image={therapy.image}
-            name={therapy.name}
-            description={therapy.description}
-            alt={therapy.alt}
-            color={therapy.color}
-          />
+          <div className="flex w-2/4 justify-center md:w-5/11 lg:w-3/10">
+            <TherapyCard
+              key={index}
+              image={therapy.image}
+              name={therapy.name}
+              description={therapy.description}
+              alt={therapy.alt}
+              color={therapy.color}
+            />
+          </div>
         ))}
       </div>
     </div>
