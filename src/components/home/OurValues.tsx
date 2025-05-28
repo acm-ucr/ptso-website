@@ -5,7 +5,7 @@ import { values } from "@/data/HomeValues";
 
 const OurValues = () => {
   return (
-    <>
+    <div className="bg-[linear-gradient(to_bottom,transparent_0%,transparent_30%,theme(colors.ptso-pink-primary)_30%,theme(colors.ptso-pink-primary)_50%,theme(colors.ptso-pink-primary)_100%)]">
       <div className="relative">
         <Image
           src={background}
@@ -29,8 +29,7 @@ const OurValues = () => {
           </div>
         </div>
       </div>
-      <div className="bg-ptso-pink-primary absolute -z-50 h-[45vh] w-full -translate-y-55 lg:h-[44vh]"></div>
-    </>
+    </div>
   );
 };
 export default OurValues;

@@ -1,8 +1,4 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 284" width="1600" height="316">
-	<title>Rectangle 39</title>
-	<style>
-		.s0 { fill: #d9eaf6 } 
-	</style>
-	<path class="s0" d="m0 33.9c0 0 213.5-95.5 638 34.2 424.5 129.8 802-34.2 802-34.2v1239.1h-1440z"/>
-	<path class="s0" d="m0 33.9c0 0 213.5-95.5 638 34.2 424.5 129.8 802-34.2 802-34.2v1239.1h-1440z"/>
+<svg width="1440" height="134" viewBox="0 0 1440 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 33.8571C0 33.8571 213.5 -61.6363 638 68.1258C1062.5 197.888 1440 33.8571 1440 33.8571V133.5H0V33.8571Z" fill="#DAEDFE"/>
+<path d="M0 33.8571C0 33.8571 213.5 -61.6363 638 68.1258C1062.5 197.888 1440 33.8571 1440 33.8571V133.5H0V33.8571Z" fill="#DAEDFE"/>
 </svg>

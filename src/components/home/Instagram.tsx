@@ -27,7 +27,7 @@ const Instagram = () => {
   return (
     <>
       <div className="bg-ptso-pink-primary relative z-50 w-full">
-        <div className="relative flex flex-row p-8 sm:mt-20">
+        <div className="relative flex flex-row p-8 sm:pt-20">
           <Image
             src={vectorGroup}
             alt="Vector Group"
@@ -59,7 +59,7 @@ const Instagram = () => {
       <Image
         src={instaBottomWave}
         alt="Instagram Bottom Wave"
-        className="-z-50 -mt-1"
+        className="-z-50 -mt-1 w-full"
       ></Image>
     </>
   );

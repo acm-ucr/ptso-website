@@ -31,9 +31,17 @@ const ContactUs = () => {
           }
         }}
       ></iframe>
-      <Image src={opportunitiesText} alt="Contact Us Top Wave"></Image>
-      <Image src={contactUsTopWave} alt="Contact Us Top Wave"></Image>
-      <div className="bg-ptso-blue-primary">
+      <Image
+        className="w-full"
+        src={opportunitiesText}
+        alt="Contact Us Top Wave"
+      />
+      <Image
+        className="w-full"
+        src={contactUsTopWave}
+        alt="Contact Us Top Wave"
+      />
+      <div className="bg-ptso-blue-primary -mt-1 pt-8">
         <div className="block md:hidden">
           <Title text="Contact Us" />
         </div>
