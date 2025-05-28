@@ -34,7 +34,7 @@ const Instagram = () => {
             className="absolute hidden w-1/2 translate-x-[10%] translate-y-[-30%] lg:block"
           />
           <div className="w-full scale-80 md:scale-100">
-            <div data-behold-id="4u02SoeevQeMHpLj9hs8" />
+            <div data-behold-id={process.env.NEXT_PUBLIC_BEHOLD_ID} />
           </div>
           <div className="flex flex-col items-center justify-center xl:mr-20">
             <Image
