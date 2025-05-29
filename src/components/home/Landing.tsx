@@ -6,7 +6,6 @@ import border from "@/public/assets/home/background/landing.svg";
 import purplediamond from "@/public/assets/home/shapes/purpleDiamond.svg";
 import whitediamond from "@/public/assets/home/shapes/whiteDiamond.svg";
 import { motion } from "motion/react";
-import React from "react";
 
 const Landing = () => {
   return (
@@ -15,9 +14,9 @@ const Landing = () => {
         <div className="flex flex-row gap-x-4 px-8 lg:gap-x-18">
           <div className="relative mt-20 mt-65 ml-20 w-full">
             <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Image
                 src={whitediamond}
@@ -36,9 +35,9 @@ const Landing = () => {
 
           <div className="relative mt-25 w-[250px]">
             <motion.div
-              transition={{ duration: 0.7, delay: 0.2 }}
-              initial={{ opacity: 0, scale: 0.7 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Image
                 src={purplediamond}
@@ -70,9 +69,9 @@ const Landing = () => {
 
           <div className="relative w-full">
             <motion.div
-              transition={{ duration: 0.7, delay: 0.2 }}
-              initial={{ opacity: 0, scale: 0.7 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Image
                 src={whitediamond}
@@ -91,9 +90,9 @@ const Landing = () => {
 
           <div className="relative mt-20 mr-20 w-[300px]">
             <motion.div
-              transition={{ duration: 0.7, delay: 0.2 }}
-              initial={{ opacity: 0, scale: 0.7 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Image
                 src={purplediamond}
