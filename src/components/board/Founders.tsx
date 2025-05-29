@@ -14,7 +14,7 @@ const Founders = () => {
       >
         <Title text="Our Founders" />
       </motion.div>
-      <div className="w-2/3 justify-between sm:flex">
+      <div className="w-2/3 justify-center sm:flex">
         {founders.map(({ image, name, alt }, index) => (
           <motion.div
             className="m-6 flex-col text-center text-lg sm:text-xl md:text-2xl"
