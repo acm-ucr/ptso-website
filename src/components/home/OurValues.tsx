@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import OurValuesText from "@/components/home/OurValuesText";
 import background from "@/public/assets/home/values/backgroundValues.svg";
 import { values } from "@/data/HomeValues";
+import { motion } from "motion/react";
 
 const OurValues = () => {
   return (
@@ -17,13 +19,20 @@ const OurValues = () => {
         </div>
         <div className="grid grid-cols-9 md:grid-cols-5">
           {values.map(({ image, alt, className }, index) => (
-            <div className={className} key={index}>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.08 }}
+              viewport={{ once: true }}
+              key={index}
+              className={className}
+            >
               <Image
                 src={image}
                 alt={alt}
                 className="w-16 sm:w-20 md:w-3/5 lg:w-4/5"
               />{" "}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
