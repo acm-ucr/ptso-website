@@ -10,114 +10,114 @@ import { motion } from "motion/react";
 const Landing = () => {
   return (
     <div className="mb-8">
-      <div className="bg-ptso-blue-primary relative z-10 flex-col items-center justify-center pt-10 text-center">
+      <div className="bg-ptso-blue-primary relative z-10 flex flex-col items-center justify-center pt-10 text-center">
         <div className="flex flex-row gap-x-4 px-8 lg:gap-x-18">
-          <div className="relative mt-20 mt-65 ml-20 w-full">
+          <div className="relative w-full">
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              initial={{ scale: 0, y: -20, x: 20 }}
+              whileInView={{ scale: 1, y: 0, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="absolute bottom-0 left-0 hidden md:flex"
             >
-              <Image
-                src={whitediamond}
-                alt="star3"
-                width={90}
-                className="absolute hidden md:flex"
-              />
-              <Image
-                src={purplediamond}
-                alt="star2"
-                width={40}
-                className="absolute hidden md:flex"
-              />
+              <Image src={whitediamond} alt="star3" width={90} />
+            </motion.div>
+
+            <motion.div
+              initial={{ scale: 0, y: -20, x: 20 }}
+              whileInView={{ scale: 1, y: 0, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="absolute bottom-0 left-0 hidden md:flex"
+            >
+              <Image src={purplediamond} alt="star2" width={40} />
             </motion.div>
           </div>
-
-          <div className="relative mt-25 w-[250px]">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <Image
-                src={purplediamond}
-                alt="star"
-                width={75}
-                className="absolute hidden md:flex"
-              />
-            </motion.div>
-          </div>
-
           <motion.div
-            transition={{ duration: 0.7, delay: 0.2 }}
-            initial={{ opacity: 0, scale: 0.7 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="-mt-12 hidden pr-8 md:flex"
           >
-            <div className="relative w-full">
+            <Image
+              src={purplediamond}
+              alt="star"
+              width={75}
+              className="h-auto w-40"
+            />
+          </motion.div>
+
+          <div className="relative w-full">
+            <motion.div
+              transition={{ duration: 0.7, delay: 0.2 }}
+              initial={{ opacity: 0, scale: 0.7, y: -20 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+            >
               <Image
                 src={PTSOLogo}
                 alt="PTSO logo"
-                className="mb-12 h-auto w-full"
+                className="mb-6 h-auto w-full"
+                priority
               />
               <Image
                 src={PTSOLogoBackground}
                 alt="Background Aura"
                 className="absolute top-0 left-0 -z-10 h-auto w-full"
               />
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
 
           <div className="relative w-full">
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              initial={{ scale: 0, y: 20, x: -20 }}
+              whileInView={{ scale: 1, y: 0, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="hidden md:flex"
             >
-              <Image
-                src={whitediamond}
-                alt="star1"
-                width={90}
-                className="hidden md:flex"
-              />
-              <Image
-                src={purplediamond}
-                alt="star5"
-                width={40}
-                className="absolute top-0 left-0 hidden md:flex"
-              />
+              <Image src={whitediamond} alt="star1" width={90} />
             </motion.div>
-          </div>
-
-          <div className="relative mt-20 mr-20 w-[300px]">
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ scale: 0, y: 20, x: -20 }}
+              whileInView={{ scale: 1, y: 0, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
+              className="absolute top-0 left-0 hidden md:flex"
             >
-              <Image
-                src={purplediamond}
-                alt="star4"
-                width={75}
-                className="mt-24 hidden md:flex"
-              />
+              <Image src={purplediamond} alt="star5" width={40} />
             </motion.div>
           </div>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="mt-24 hidden md:flex"
+          >
+            <Image
+              src={purplediamond}
+              alt="star4"
+              width={75}
+              className="h-auto w-40"
+            />
+          </motion.div>
         </div>
 
-        <motion.div
-          transition={{ duration: 0.7, delay: 0.2 }}
-          initial={{ opacity: 0, scale: 0.7 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-        >
-          <div className="text-ptso-navy font-beVietnamPro text-5xl leading-tight font-bold md:text-7xl">
+        <div className="text-ptso-navy font-beVietnamPro text-3xl leading-tight font-bold md:text-5xl">
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
             Pre-Therapy
             <br />
             Student Organization
-          </div>
-          <div className="text-ptso-navy font-beVietnamPro mt-8 text-2xl md:text-3xl">
+          </motion.div>
+        </div>
+        <div className="text-ptso-navy font-beVietnamPro mt-4 text-lg md:text-xl">
+          <motion.div
+            initial={{ y: -30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
             UCR Student Organization est. 2024
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
 
       <div>
