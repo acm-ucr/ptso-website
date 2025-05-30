@@ -16,10 +16,10 @@ const Footer = () => {
       <Divider />
       <div className="flex grid-flow-col grid-cols-1 flex-col items-center gap-4 py-4 text-xl sm:text-2xl md:text-3xl lg:grid">
         <div className="flex items-center">
-          <Image src={ptsoLogo} alt="Image" width={49} height={70} />
+          <Image src={ptsoLogo} alt="Logo" className="w-15" />
           <div className="px-4">PTSO</div>
         </div>
-        <div className="hidden grid-cols-2 space-x-5 divide-x-2 md:grid">
+        <div className="hidden grid-cols-2 space-x-5 md:grid">
           <div className="flex flex-row items-center space-x-5">
             {footer.slice(0, 2).map(({ link, icon }, index) => (
               <Link
@@ -45,7 +45,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="mt-5 flex flex-row space-x-5 md:hidden">
+        <div className="flex flex-row space-x-5 md:hidden">
           {footer.map(({ link, icon }, index) => (
             <Link
               className="transition ease-in-out hover:-translate-y-1"
