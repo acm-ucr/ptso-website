@@ -14,7 +14,7 @@ const Footer = () => {
       className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : "bg-ptso-pink-light"}`}
     >
       <Divider />
-      <div className="flex py-4 text-xl sm:text-2xl flex-col items-center md:text-3xl lg:flex-row">
+      <div className="flex flex-col items-center py-4 text-xl sm:text-2xl md:text-3xl lg:flex-row">
         <div className="flex items-center">
           <Image src={ptsoLogo} alt="Image" width={49} height={70} />
           <div className="px-4">PTSO</div>
@@ -32,7 +32,7 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <div className="item-center flex flex-col  space-y-3 text-xl">
+          <div className="item-center flex flex-col space-y-3 text-xl">
             {footer.slice(2).map(({ link, name }, index) => (
               <Link
                 className="transition ease-in-out hover:-translate-y-1"
