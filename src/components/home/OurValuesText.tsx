@@ -10,7 +10,7 @@ const OurValuesText = () => {
       <motion.div
         initial={{ scale: 0.9, y: 0, x: -50 }}
         whileInView={{ scale: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.05 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
         viewport={{ once: true }}
         className="mr-5 flex items-center justify-center md:mr-0 md:justify-start"
       >
@@ -20,8 +20,7 @@ const OurValuesText = () => {
       <motion.div
         initial={{ scale: 0.9, y: 20, x: 0 }}
         whileInView={{ scale: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
         className="font-quicksand mt-3 max-w-6xl px-4 text-center text-sm sm:px-6 sm:text-base md:w-full md:px-8 md:text-left md:text-xl"
       >
         At PTSO, we are dedicated to fostering a supportive and inclusive

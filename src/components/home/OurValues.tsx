@@ -22,8 +22,7 @@ const OurValues = () => {
             <motion.div
               initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: index * 0.08 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
               key={index}
               className={className}
             >
