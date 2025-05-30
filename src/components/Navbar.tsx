@@ -75,8 +75,6 @@ const Navbar = () => {
               <Image
                 src={ptsoLogo}
                 alt="PTSO Logo"
-                width={49}
-                height={70}
                 className="hover:cursor-pointer"
               />
             </Link>

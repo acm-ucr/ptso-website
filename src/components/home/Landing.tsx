@@ -19,7 +19,7 @@ const Landing = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="absolute bottom-0 left-0 hidden md:flex"
             >
-              <Image src={whitediamond} alt="star3" width={90} />
+              <Image src={whitediamond} alt="star3" />
             </motion.div>
 
             <motion.div
@@ -28,7 +28,7 @@ const Landing = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="absolute bottom-0 left-0 hidden md:flex"
             >
-              <Image src={purplediamond} alt="star2" width={40} />
+              <Image src={purplediamond} alt="star2" className="w-1/2" />
             </motion.div>
           </div>
           <motion.div
@@ -40,7 +40,6 @@ const Landing = () => {
             <Image
               src={purplediamond}
               alt="star"
-              width={75}
               className="h-auto w-40"
             />
           </motion.div>
@@ -72,7 +71,7 @@ const Landing = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="hidden md:flex"
             >
-              <Image src={whitediamond} alt="star1" width={90} />
+              <Image src={whitediamond} alt="star1" />
             </motion.div>
             <motion.div
               initial={{ scale: 0, y: 20, x: -20 }}
@@ -80,7 +79,7 @@ const Landing = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="absolute top-0 left-0 hidden md:flex"
             >
-              <Image src={purplediamond} alt="star5" width={40} />
+              <Image src={purplediamond} alt="star5" className="w-1/2" />
             </motion.div>
           </div>
           <motion.div
@@ -92,8 +91,7 @@ const Landing = () => {
             <Image
               src={purplediamond}
               alt="star4"
-              width={75}
-              className="h-auto w-40"
+              className="h-auto w-50"
             />
           </motion.div>
         </div>
