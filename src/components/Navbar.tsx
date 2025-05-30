@@ -70,12 +70,12 @@ const Navbar = () => {
 
       <div className="md:hidden">
         <div className="flex items-center justify-between px-4 pt-4">
-          <motion.div {...navItemAnimation}>
+          <motion.div {...navItemAnimation} whileHover={{ scale: 1.05 }}>
             <Link href="/" onClick={closeMenu}>
               <Image
                 src={ptsoLogo}
                 alt="PTSO Logo"
-                className="hover:cursor-pointer"
+                className="w-15 hover:cursor-pointer"
               />
             </Link>
           </motion.div>
