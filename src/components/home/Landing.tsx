@@ -37,11 +37,7 @@ const Landing = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="-mt-12 hidden pr-8 md:flex"
           >
-            <Image
-              src={purplediamond}
-              alt="star"
-              className="h-auto w-40"
-            />
+            <Image src={purplediamond} alt="star" className="h-auto w-40" />
           </motion.div>
 
           <div className="relative w-full">
@@ -88,11 +84,7 @@ const Landing = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-24 hidden md:flex"
           >
-            <Image
-              src={purplediamond}
-              alt="star4"
-              className="h-auto w-50"
-            />
+            <Image src={purplediamond} alt="star4" className="h-auto w-50" />
           </motion.div>
         </div>
 
