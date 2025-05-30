@@ -12,7 +12,7 @@ const Value = ({ name, image, alt, description }: ValueProps) => {
   return (
     <div>
       <div className="flex w-7/8 gap-10 justify-self-center pb-12 max-md:hidden">
-        <Image src={image} alt={alt} className="md:w-1/7 xl:w-1/10" />
+        <Image src={image} alt={alt} className="w-1/10" />
 
         <div className="flex-col space-y-5 md:w-6/7 xl:w-9/10">
           <div className="font-quicksand text-ptso-purple-accent font-semibold md:text-2xl lg:text-3xl">
