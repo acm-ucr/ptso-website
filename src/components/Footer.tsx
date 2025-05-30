@@ -14,7 +14,7 @@ const Footer = () => {
       className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : "bg-ptso-pink-light"}`}
     >
       <Divider />
-      <div className="flex flex-col items-center py-4 text-xl sm:text-2xl md:text-3xl lg:flex-row">
+      <div className="flex grid-flow-col grid-cols-1 flex-col items-center gap-4 py-4 text-xl sm:text-2xl md:text-3xl lg:grid">
         <div className="flex items-center">
           <Image src={ptsoLogo} alt="Image" width={49} height={70} />
           <div className="px-4">PTSO</div>
