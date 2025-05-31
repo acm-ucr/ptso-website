@@ -19,7 +19,7 @@ const Footer = () => {
           <Image src={ptsoLogo} alt="Logo" className="w-15" />
           <div className="px-4">PTSO</div>
         </div>
-        <div className="hidden grid-cols-2 space-x-5 md:grid">
+        <div className="hidden grid-cols-2 space-x-5 divide-x-2 md:grid">
           <div className="flex flex-row items-center space-x-5">
             {footer.slice(0, 2).map(({ link, icon }, index) => (
               <Link
