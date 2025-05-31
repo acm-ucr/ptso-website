@@ -5,6 +5,7 @@ import Image from "next/image";
 import ptsoLogo from "@/public/ptsoLogoSmall.webp";
 import Divider from "@/components/Divider";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -16,8 +17,12 @@ const Footer = () => {
       <Divider />
       <div className="flex grid-flow-col grid-cols-1 flex-col items-center gap-4 py-4 text-xl sm:text-2xl md:text-3xl lg:grid">
         <div className="flex items-center">
-          <Image src={ptsoLogo} alt="Logo" className="w-15" />
-          <div className="px-4">PTSO</div>
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link href="/" className="mr-8 flex items-center">
+              <Image src={ptsoLogo} alt="Logo" className="w-15" />
+              <div className="px-4">PTSO</div>
+            </Link>
+          </motion.div>
         </div>
         <div className="hidden grid-cols-2 space-x-5 md:grid">
           <div className="flex flex-row items-center space-x-5">
