@@ -1,27 +1,9 @@
 "use client";
 import { picturesData } from "@/data/GalleryImages";
 import ImageCard from "@/components/gallery/ImageCard";
-import { motion } from "motion/react";
-import { ReactNode } from "react";
+import Animation from "@/components/gallery/Animation";
 
-interface animationProp {
-  children: ReactNode;
-  index: number;
-}
-
-const Animation = ({ children, index }: animationProp) => {
-  return (
-    <motion.div
-      initial={{ y: 10, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, delay: index * 0.2 }}
-    >
-      {children}
-    </motion.div>
-  );
-};
-
-export default function GalleryGrid() {
+const GalleryGrid = () => {
   return (
     <div className="mx-auto mt-10 mb-10 flex w-11/12 flex-col items-center sm:gap-4">
       <div className="h-full w-full grid-cols-3 gap-4 sm:grid">
@@ -117,4 +99,6 @@ export default function GalleryGrid() {
       </div>
     </div>
   );
-}
+};
+
+export default GalleryGrid;
