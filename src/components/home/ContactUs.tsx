@@ -10,6 +10,7 @@ import vector6 from "@/public/assets/home/background/vector6.svg";
 import contactUs from "@/public/assets/home/contactUs.webp";
 import ptsoLogoLarge from "@/public/ptsoLogoLarge.webp";
 import Title from "@/components/Title";
+import toast from "react-hot-toast";
 import { motion } from "motion/react";
 
 const ContactUs = () => {
