@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 const OurValues = () => {
   return (
-    <div className="relative">
+    <div className="bg-[linear-gradient(to_bottom,transparent_0%,transparent_30%,theme(colors.ptso-pink-primary)_30%,theme(colors.ptso-pink-primary)_50%,theme(colors.ptso-pink-primary)_100%)] relative">
       <Image
         src={background}
         alt=""
@@ -30,7 +30,7 @@ const OurValues = () => {
                 src={image}
                 alt={alt}
                 className="w-16 sm:w-20 md:w-3/5 lg:w-4/5"
-              />{" "}
+              />
             </motion.div>
           ))}
         </div>
