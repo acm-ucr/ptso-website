@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const hoverScale = {
   whileHover: { scale: 1.05 },
-  transition: { duration: 0.2, type: "tween" },
+  transition: { duration: 0.2 },
 };
 
 const navItemAnimation = {
@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div className="text-ptso-purple-accent bg-ptso-blue-primary">
       <div className="hidden items-center p-4 md:flex">
-        <motion.div {...navItemAnimation}>
+        <motion.div {...navItemAnimation} whileHover={{ scale: 1.05 }}>
           <Link href="/" className="mr-8 flex items-center">
             <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
             <div className="px-4 text-3xl">PTSO</div>
@@ -46,6 +46,7 @@ const Navbar = () => {
                 ...navItemAnimation.transition,
                 delay: index * 0.1,
               }}
+              whileHover={{ scale: 1.05 }}
             >
               <Link
                 href={link}
@@ -69,14 +70,12 @@ const Navbar = () => {
 
       <div className="md:hidden">
         <div className="flex items-center justify-between px-4 pt-4">
-          <motion.div {...navItemAnimation}>
+          <motion.div {...navItemAnimation} whileHover={{ scale: 1.05 }}>
             <Link href="/" onClick={closeMenu}>
               <Image
                 src={ptsoLogo}
                 alt="PTSO Logo"
-                width={49}
-                height={70}
-                className="hover:cursor-pointer"
+                className="w-15 hover:cursor-pointer"
               />
             </Link>
           </motion.div>
