@@ -18,20 +18,21 @@ const TherapyTypes = () => {
         guest speakers of the career and the graduate school application
         process.
       </p>
-
-      <div className="flex flex-wrap justify-center gap-4">
-        {therapyTypes.map((therapy, index) => (
-          <div className="flex w-2/4 justify-center md:w-5/11 lg:w-3/10">
-            <TherapyCard
-              key={index}
-              image={therapy.image}
-              name={therapy.name}
-              description={therapy.description}
-              alt={therapy.alt}
-              color={therapy.color}
-            />
-          </div>
-        ))}
+      <div className="mx-auto max-w-7xl">
+        <div className="mx-3 flex flex-wrap justify-center gap-4">
+          {therapyTypes.map((therapy, index) => (
+            <div className="flex w-2/5 justify-center sm:w-3/10">
+              <TherapyCard
+                key={index}
+                image={therapy.image}
+                name={therapy.name}
+                description={therapy.description}
+                alt={therapy.alt}
+                color={therapy.color}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
