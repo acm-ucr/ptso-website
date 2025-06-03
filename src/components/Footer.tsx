@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div
-      className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : "bg-ptso-pink-light"}`}
+      className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : "bg-ptso-pink-accent-again"}`}
     >
       <Divider />
       <div className="flex flex-col items-center justify-center py-4 text-xl sm:text-2xl md:flex md:text-3xl">

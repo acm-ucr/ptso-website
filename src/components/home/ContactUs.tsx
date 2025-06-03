@@ -69,17 +69,13 @@ const ContactUs = () => {
 
             <div className="bg-ptso-blue-light border-ptso-blue-accent w-full rounded-4xl border-3 p-8 md:absolute md:w-5/6">
               {isSubmitted ? (
-                <div className="font-average flex flex-col items-center text-4xl">
-                  <Image
-                    src={ptsoLogoLarge}
-                    alt="Logo"
-                    className="m-19 w-1/3"
-                  />
+                <div className="font-average flex flex-col items-center text-center text-xl sm:text-2xl">
+                  <Image src={ptsoLogoLarge} alt="Logo" className="m-6 w-1/2" />
                   Form Submitted!
                 </div>
               ) : (
                 <form
-                  action="https://docs.google.com/forms/d/1jzI8siyhb0IFkiiah1I0O2L9M0O3iZdmZnHPkXKUwGA/formResponse"
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSfEp520S0MsaVBYi7kvwI3MK9AidS6VyGL4aw1YiJ4low1M2A/formResponse"
                   onSubmit={() => (window.submitted = true)}
                   target="hidden_iframe"
                 >
@@ -99,7 +95,7 @@ const ContactUs = () => {
                   </div>
                   <input
                     name="entry.2011894593"
-                    type="text"
+                    type="email"
                     placeholder="Email"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-3"
                     required
