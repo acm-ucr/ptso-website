@@ -24,7 +24,6 @@ const ValueList = () => {
             initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: index * 0.05 }}
-            viewport={{ once: true }}
             key={index}
           >
             <Value
