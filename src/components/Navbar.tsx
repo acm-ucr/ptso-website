@@ -62,6 +62,7 @@ const Navbar = () => {
           <Link
             href="https://www.instagram.com/ucr_ptso/"
             className="bg-ptso-pink-secondary hover:bg-ptso-pink-secondary/90 inline-block rounded-full px-6 py-2 text-white"
+            target="_blank"
           >
             JOIN US
           </Link>
