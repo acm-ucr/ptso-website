@@ -6,13 +6,13 @@ interface picturesData {
   description: string;
 }
 import grid0 from "@/public/assets/gallery/mftApplication.webp";
-import grid1 from "@/public/assets/gallery/bestBuddiesColab.webp";
-import grid2 from "@/public/assets/gallery/bestBudiesAirplane.webp";
+import grid1 from "@/public/assets/gallery/bestBuddiesCollab.webp";
+import grid2 from "@/public/assets/gallery/bestBuddiesAirplane.webp";
 import grid3 from "@/public/assets/gallery/winter24BingoWinners.webp";
 import grid4 from "@/public/assets/gallery/gradStudentPanel2.webp";
 import grid5 from "@/public/assets/gallery/PTGroupPhoto.webp";
 import grid6 from "@/public/assets/gallery/bingoGroupPhoto.webp";
-import grid7 from "@/public/assets/gallery/namiMumuPtso1.webp";
+import grid7 from "@/public/assets/gallery/namiMumuPTSO1.webp";
 import grid8 from "@/public/assets/gallery/applicationProcessChairs.webp";
 import grid9 from "@/public/assets/gallery/PTDemo.webp";
 import grid10 from "@/public/assets/gallery/PT.webp";
@@ -30,13 +30,13 @@ export const picturesData: picturesData[] = [
   },
   {
     pictures: grid1,
-    alt: "bestBuddiesColab",
-    description: "Best Buddies Colab",
+    alt: "bestBuddiesCollab",
+    description: "Best Buddies Collab",
   },
   {
     pictures: grid2,
-    alt: "bestBudiesAirplane",
-    description: "Best Budies Airplane",
+    alt: "bestBuddiesAirplane",
+    description: "Best Buddies Airplane",
   },
   {
     pictures: grid3,
@@ -60,8 +60,8 @@ export const picturesData: picturesData[] = [
   },
   {
     pictures: grid7,
-    alt: "namiMumuPtso1",
-    description: "Nami Mumu Ptso 1",
+    alt: "namiMumuPTSO1",
+    description: "Nami Mumu PTSO 1",
   },
   {
     pictures: grid8,
