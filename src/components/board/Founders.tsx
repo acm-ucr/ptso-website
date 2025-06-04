@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const Founders = () => {
   return (
-    <div className="bg-ptso-pink-light flex-col justify-items-center pb-8">
+    <div className="bg-ptso-pink-light flex flex-col items-center pb-8">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ x: 0, opacity: 1 }}

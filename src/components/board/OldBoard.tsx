@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const OldBoard = () => {
   return (
-    <div className="mt-8 justify-items-center md:mt-12">
+    <div className="mt-8 flex flex-col items-center md:mt-12">
       <Year text="'23-'24" />
       <motion.div
         className="flex flex-wrap justify-center px-4 md:w-4/5 md:px-8 md:py-2"
