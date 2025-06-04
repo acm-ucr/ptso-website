@@ -12,7 +12,7 @@ import grid3 from "@/public/assets/gallery/winter24BingoWinners.webp";
 import grid4 from "@/public/assets/gallery/gradStudentPanel2.webp";
 import grid5 from "@/public/assets/gallery/PTGroupPhoto.webp";
 import grid6 from "@/public/assets/gallery/bingoGroupPhoto.webp";
-import grid7 from "@/public/assets/gallery/namiMumuPTSO1.webp";
+import grid7 from "@/public/assets/gallery/namiMumuPtso1.webp";
 import grid8 from "@/public/assets/gallery/applicationProcessChairs.webp";
 import grid9 from "@/public/assets/gallery/PTDemo.webp";
 import grid10 from "@/public/assets/gallery/PT.webp";
