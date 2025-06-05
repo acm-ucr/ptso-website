@@ -33,10 +33,20 @@ const Instagram = () => {
             alt="Vector Group"
             className="absolute hidden w-1/2 translate-x-[10%] translate-y-[-30%] lg:block"
           />
-          <div className="w-full scale-80 md:scale-100">
+          <motion.div
+            className="w-full scale-80 md:scale-100"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div data-behold-id={process.env.NEXT_PUBLIC_BEHOLD_ID} />
-          </div>
-          <div className="flex flex-col items-center justify-center xl:mr-20">
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-center justify-center xl:mr-20"
+            initial={{ scale: 0.9, opacity: 0, y: 0, x: 20 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <Image
               src={circleLogo}
               alt="Circle Logo"
@@ -53,7 +63,7 @@ const Instagram = () => {
                 Follow on Instagram
               </Link>
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <Image
