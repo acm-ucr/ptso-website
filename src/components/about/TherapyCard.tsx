@@ -22,12 +22,12 @@ const TherapyCard = ({
   const [flipped, setFlipped] = useState(false);
 
   return (
-    <div className="aspect-5/6 w-full">
+    <div className="aspect-5/6 w-full cursor-pointer">
       <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1.01 }}
-        whileHover={{ scale: 1.07 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: -30, scale: 0.5 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.7 }}
         animate={{ rotateY: flipped ? 180 : 0 }}
         onClick={() => setFlipped((prevState) => !prevState)}
         style={{ transformStyle: "preserve-3d" }}
