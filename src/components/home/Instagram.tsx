@@ -38,16 +38,14 @@ const Instagram = () => {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
           >
             <div data-behold-id={process.env.NEXT_PUBLIC_BEHOLD_ID} />
           </motion.div>
           <motion.div
             className="flex flex-col items-center justify-center xl:mr-20"
-            initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
+            initial={{ scale: 0.9, opacity: 0, y: 0, x: 20 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
           >
             <Image
               src={circleLogo}

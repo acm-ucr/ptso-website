@@ -54,7 +54,6 @@ const ContactUs = () => {
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
               >
                 <Title text="Contact Us" />
                 <Image
@@ -78,7 +77,6 @@ const ContactUs = () => {
               initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
             >
               {isSubmitted ? (
                 <div className="font-average flex flex-col items-center text-center text-xl sm:text-2xl">
