@@ -15,7 +15,7 @@ const Footer = () => {
       className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : pathname == "/board" ? "bg-ptso-pink-light" : "bg-ptso-pink-accent-darker"}`}
     >
       <Divider />
-      <div className="flex grid-flow-col grid-cols-1 flex-col items-center gap-4 py-4 text-xl sm:text-2xl md:text-3xl lg:grid">
+      <div className="flex grid-flow-col grid-cols-1 flex-col items-center gap-4 py-4 text-xl sm:text-2xl md:text-3xl md:grid">
         <div className="flex items-center">
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link href="/" className="flex items-center gap-3 md:gap-5">

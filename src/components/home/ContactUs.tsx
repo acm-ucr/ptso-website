@@ -41,7 +41,7 @@ const ContactUs = () => {
         src={contactUsTopWave}
         alt="Contact Us Top Wave"
       />
-      <div className="bg-ptso-blue-primary -mt-1 pt-8">
+      <div className="bg-ptso-blue-primary -mt-1 py-8">
         <div className="block md:hidden">
           <Title text="Contact Us" />
         </div>
