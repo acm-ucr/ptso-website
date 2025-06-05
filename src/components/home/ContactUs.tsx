@@ -49,14 +49,19 @@ const ContactUs = () => {
         <div className="relative flex flex-col md:flex-row">
           <div className="flex items-center justify-center md:w-1/2">
             <div className="flex md:flex-col md:gap-6">
-              <div className="relative bottom-10 hidden md:block">
+              <motion.div
+                className="relative bottom-10 hidden md:block"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
                 <Title text="Contact Us" />
                 <Image
                   src={contactUs}
                   alt="Contact Us Hand"
                   className="hidden w-5/6 md:block"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
 
@@ -67,7 +72,12 @@ const ContactUs = () => {
               className="relative right-5 bottom-13 hidden md:block"
             />
 
-            <div className="bg-ptso-blue-light border-ptso-blue-accent w-full rounded-4xl border-3 p-8 md:absolute md:w-5/6">
+            <motion.div
+              className="bg-ptso-blue-light border-ptso-blue-accent w-full rounded-4xl border-3 p-8 md:absolute md:w-5/6"
+              initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
               {isSubmitted ? (
                 <div className="font-average flex flex-col items-center text-center text-xl sm:text-2xl">
                   <Image src={ptsoLogoLarge} alt="Logo" className="m-6 w-1/2" />
@@ -118,7 +128,7 @@ const ContactUs = () => {
                   </motion.div>
                 </form>
               )}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
