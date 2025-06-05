@@ -27,39 +27,30 @@ const Footer = () => {
         <div className="hidden grid-cols-2 space-x-5 divide-x-2 md:grid">
           <div className="flex flex-row items-center space-x-5">
             {footer.slice(0, 2).map(({ link, icon }, index) => (
-              <Link
-                className="transition ease-in-out hover:-translate-y-1"
-                key={index}
-                href={link}
-                target="_blank"
-              >
-                {icon}
-              </Link>
+              <motion.span key={index} whileHover={{ scale: 1.05 }}>
+                <Link href={link} target="_blank">
+                  {icon}
+                </Link>
+              </motion.span>
             ))}
           </div>
           <div className="item-center flex flex-col space-y-3 text-xl">
             {footer.slice(2).map(({ link, name }, index) => (
-              <Link
-                className="transition ease-in-out hover:-translate-y-1"
-                key={index}
-                href={link}
-                target="_blank"
-              >
-                {name}
-              </Link>
+              <motion.span key={index} whileHover={{ scale: 1.05 }}>
+                <Link href={link} target="_blank">
+                  {name}
+                </Link>
+              </motion.span>
             ))}
           </div>
         </div>
         <div className="flex flex-row space-x-5 md:hidden">
           {footer.map(({ link, icon }, index) => (
-            <Link
-              className="transition ease-in-out hover:-translate-y-1"
-              key={index}
-              href={link}
-              target="_blank"
-            >
-              {icon}
-            </Link>
+            <motion.span key={index} whileHover={{ scale: 1.05 }}>
+              <Link href={link} target="_blank">
+                {icon}
+              </Link>
+            </motion.span>
           ))}
         </div>
       </div>
