@@ -21,9 +21,8 @@ const TherapyTypes = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mx-3 flex flex-wrap justify-center gap-4">
           {therapyTypes.map((therapy, index) => (
-            <div className="flex w-2/5 justify-center sm:w-3/10">
+            <div className="flex w-2/5 justify-center sm:w-3/10" key={index}>
               <TherapyCard
-                key={index}
                 image={therapy.image}
                 name={therapy.name}
                 description={therapy.description}
