@@ -22,7 +22,7 @@ const TherapyCard = ({
   const [flipped, setFlipped] = useState(false);
 
   return (
-    <div className="h-full w-100">
+    <div className="aspect-5/6 w-full">
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0, scale: 1.01 }}
@@ -30,37 +30,38 @@ const TherapyCard = ({
         transition={{ duration: 0.5 }}
         animate={{ rotateY: flipped ? 180 : 0 }}
         onClick={() => setFlipped((prevState) => !prevState)}
-        style={{ position: "relative", transformStyle: "preserve-3d" }}
-        className="h-full"
+        style={{ transformStyle: "preserve-3d" }}
+        className="relative h-full w-full sm:w-full"
       >
         <div
-          className={`${color} absolute mx-9 flex h-full w-3/4 flex-col items-center justify-center space-y-4 rounded-xl`}
-          style={{ backfaceVisibility: "hidden" }}
+          className={`${color} absolute inset-0 flex flex-col items-center justify-center space-y-4 rounded-xl`}
+          style={{
+            backfaceVisibility: "hidden",
+            zIndex: flipped ? 1 : 2,
+          }}
         >
-          <Image
-            src={image}
-            alt={alt}
-            width={80}
-            height={80}
-            className="mt-24 object-contain"
-          />
-          <div className="font-beVietnamPro mb-24 text-center text-2xl text-white">
+          <div className="relative w-1/2 md:w-1/3">
+            <Image src={image} alt={alt} className="object-contain" />
+          </div>
+          <div className="font-beVietnamPro text-md text-center text-white sm:text-2xl lg:text-3xl xl:text-4xl">
             {name}
           </div>
         </div>
 
         <div
-          className={`${color} top-5 flex flex-col items-center space-y-4 rounded-xl pr-2 pb-5 pl-2`}
-          style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
+          className={`${color} absolute inset-0 flex flex-col items-center justify-center space-y-2 rounded-xl p-1 sm:space-y-4 md:p-3 lg:space-y-8`}
+          style={{
+            backfaceVisibility: "hidden",
+            transform: "rotateY(180deg)",
+            zIndex: flipped ? 2 : 1,
+          }}
         >
-          <Image
-            src={image}
-            alt={alt}
-            width={60}
-            height={60}
-            className="object-contain"
-          />
-          <div className="text-center font-serif text-white">{description}</div>
+          <div className="relative w-1/4 sm:w-1/2 md:w-1/3">
+            <Image src={image} alt={alt} className="object-contain" />
+          </div>
+          <div className="md:text-md text-center font-serif text-[8px] text-white sm:text-xs xl:text-xl">
+            {description}
+          </div>
         </div>
       </motion.div>
     </div>

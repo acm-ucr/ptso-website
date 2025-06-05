@@ -5,19 +5,24 @@ import Image from "next/image";
 import ptsoLogo from "@/public/ptsoLogoSmall.webp";
 import Divider from "@/components/Divider";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
 
 const Footer = () => {
   const pathname = usePathname();
 
   return (
     <div
-      className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : "bg-ptso-pink-light"}`}
+      className={`px-4 ${pathname == "/about" ? "bg-white" : pathname == "/gallery" || pathname == "/" ? "bg-ptso-blue-primary" : pathname == "/board" ? "bg-ptso-pink-light" : "bg-ptso-pink-accent-darker"}`}
     >
       <Divider />
       <div className="flex grid-flow-col grid-cols-1 flex-col items-center gap-4 py-4 text-xl sm:text-2xl md:text-3xl lg:grid">
         <div className="flex items-center">
-          <Image src={ptsoLogo} alt="Image" width={49} height={70} />
-          <div className="px-4">PTSO</div>
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link href="/" className="flex items-center gap-3 md:gap-5">
+              <Image src={ptsoLogo} alt="Logo" className="w-15" />
+              <div>PTSO</div>
+            </Link>
+          </motion.div>
         </div>
         <div className="hidden grid-cols-2 space-x-5 divide-x-2 md:grid">
           <div className="flex flex-row items-center space-x-5">
@@ -45,7 +50,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="mt-5 flex flex-row space-x-5 md:hidden">
+        <div className="flex flex-row space-x-5 md:hidden">
           {footer.map(({ link, icon }, index) => (
             <Link
               className="transition ease-in-out hover:-translate-y-1"

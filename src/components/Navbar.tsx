@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const hoverScale = {
   whileHover: { scale: 1.05 },
-  transition: { duration: 0.2, type: "tween" },
+  transition: { duration: 0.2 },
 };
 
 const navItemAnimation = {
@@ -28,14 +28,9 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className="text-ptso-purple-accent bg-ptso-blue-primary"
-    >
+    <div className="text-ptso-purple-accent bg-ptso-blue-primary">
       <div className="hidden items-center p-4 md:flex">
-        <motion.div {...navItemAnimation}>
+        <motion.div {...navItemAnimation} whileHover={{ scale: 1.05 }}>
           <Link href="/" className="mr-8 flex items-center">
             <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
             <div className="px-4 text-3xl">PTSO</div>
@@ -51,6 +46,7 @@ const Navbar = () => {
                 ...navItemAnimation.transition,
                 delay: index * 0.1,
               }}
+              whileHover={{ scale: 1.05 }}
             >
               <Link
                 href={link}
@@ -66,6 +62,7 @@ const Navbar = () => {
           <Link
             href="https://www.instagram.com/ucr_ptso/"
             className="bg-ptso-pink-secondary hover:bg-ptso-pink-secondary/90 inline-block rounded-full px-6 py-2 text-white"
+            target="_blank"
           >
             JOIN US
           </Link>
@@ -74,14 +71,12 @@ const Navbar = () => {
 
       <div className="md:hidden">
         <div className="flex items-center justify-between px-4 pt-4">
-          <motion.div {...navItemAnimation}>
+          <motion.div {...navItemAnimation} whileHover={{ scale: 1.05 }}>
             <Link href="/" onClick={closeMenu}>
               <Image
                 src={ptsoLogo}
                 alt="PTSO Logo"
-                width={49}
-                height={70}
-                className="hover:cursor-pointer"
+                className="w-15 hover:cursor-pointer"
               />
             </Link>
           </motion.div>
@@ -143,7 +138,7 @@ const Navbar = () => {
       <div className="pt-4 md:pt-0">
         <Divider />
       </div>
-    </motion.div>
+    </div>
   );
 };
 
