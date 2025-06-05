@@ -25,7 +25,7 @@ const TherapyCard = ({
     <div className="h-full w-100">
       <motion.div
         initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1.01}}
+        whileInView={{ opacity: 1, y: 0, scale: 1.01 }}
         whileHover={{ scale: 1.07 }}
         transition={{ duration: 0.5 }}
         animate={{ rotateY: flipped ? 180 : 0 }}
