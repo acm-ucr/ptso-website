@@ -7,7 +7,7 @@ import { navigations } from "@/data/NavbarLinks";
 import ptsoLogo from "@/public/ptsoLogoSmall.webp";
 import Divider from "@/components/Divider";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const hoverScale = {
   whileHover: { scale: 1.05 },

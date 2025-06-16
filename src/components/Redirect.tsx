@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, Transition } from "motion/react";
 
 import rectangle1 from "@/public/assets/not-found/rectangle1.svg";
 import rectangle2 from "@/public/assets/not-found/rectangle2.svg";
@@ -11,6 +11,12 @@ import rectangle4 from "@/public/assets/not-found/rectangle4.svg";
 interface redirectProps {
   statusCode: number;
 }
+
+const fadeIn = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  transition: { duration: 1 } as Transition,
+};
 
 const Redirect = ({ statusCode }: redirectProps) => {
   return (
@@ -28,9 +34,7 @@ const Redirect = ({ statusCode }: redirectProps) => {
       />
 
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        {...fadeIn}
         className="flex h-[72vh] flex-col items-center justify-center text-center md:min-h-screen"
       >
         <div className="text-ptso-purple-secondary font-beVietnamPro mb-4 border-b-5 text-7xl font-extrabold sm:text-8xl md:text-9xl">
@@ -57,7 +61,7 @@ const Redirect = ({ statusCode }: redirectProps) => {
 
       <Image
         src={rectangle4}
-        alt="Redirect wave 1"
+        alt="Redirect wave 4"
         className="absolute bottom-0 left-0 z-0 w-full"
       />
     </div>

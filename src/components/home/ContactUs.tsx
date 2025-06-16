@@ -15,6 +15,18 @@ import Title from "@/components/Title";
 import toast from "react-hot-toast";
 import { motion } from "motion/react";
 
+const contactUsTitleAnimation = {
+  initial: { opacity: 0, y: -20 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, delay: 0.3 },
+};
+
+const formAnimation = {
+  initial: { scale: 0.9, opacity: 0, y: 0, x: 10 },
+  whileInView: { scale: 1, opacity: 1 },
+  transition: { duration: 0.6, delay: 0.3 },
+};
+
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -51,9 +63,9 @@ const ContactUs = () => {
             <div className="flex md:flex-col md:gap-6">
               <motion.div
                 className="relative bottom-10 hidden md:block"
-                initial={{ opacity: 0, y: -20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                initial={contactUsTitleAnimation.initial}
+                whileInView={contactUsTitleAnimation.whileInView}
+                transition={contactUsTitleAnimation.transition}
               >
                 <Title text="Contact Us" />
                 <Image
@@ -74,9 +86,9 @@ const ContactUs = () => {
 
             <motion.div
               className="bg-ptso-blue-light border-ptso-blue-accent w-full rounded-4xl border-3 p-8 md:absolute md:w-5/6"
-              initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              initial={formAnimation.initial}
+              whileInView={formAnimation.whileInView}
+              transition={formAnimation.transition}
             >
               {isSubmitted ? (
                 <div className="font-average flex flex-col items-center text-center text-xl sm:text-2xl">

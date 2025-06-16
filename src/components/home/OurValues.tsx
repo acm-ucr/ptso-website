@@ -5,6 +5,15 @@ import background from "@/public/assets/home/values/backgroundValues.svg";
 import { values } from "@/data/HomeValues";
 import { motion } from "motion/react";
 
+const valueAnimation = {
+  initial: { scale: 0.9, opacity: 0, y: 0, x: 10 },
+  whileInView: { scale: 1, opacity: 1 },
+  transition: (index: number) => ({
+    duration: 0.8,
+    delay: index * 0.1,
+  }),
+};
+
 const OurValues = () => {
   return (
     <div className="bg-[linear-gradient(to_bottom,transparent_0%,transparent_30%,theme(colors.ptso-pink-primary)_30%,theme(colors.ptso-pink-primary)_50%,theme(colors.ptso-pink-primary)_100%)] relative">
@@ -20,11 +29,10 @@ const OurValues = () => {
         <div className="grid grid-cols-9 md:grid-cols-5">
           {values.map(({ image, alt, className }, index) => (
             <motion.div
-              initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
               key={index}
               className={className}
+              {...valueAnimation}
+              transition={valueAnimation.transition(index)}
             >
               <Image
                 src={image}
@@ -38,4 +46,5 @@ const OurValues = () => {
     </div>
   );
 };
+
 export default OurValues;

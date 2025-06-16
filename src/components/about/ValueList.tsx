@@ -7,6 +7,12 @@ import Title from "@/components/Title";
 import TopWave from "@/public/assets/about/background/topWave.svg";
 import BottomWave from "@/public/assets/about/background/bottomWave.svg";
 
+const valueAnimation = (index: number) => ({
+  initial: { scale: 0.9, opacity: 0, y: 0, x: 10 },
+  whileInView: { scale: 1, opacity: 1 },
+  transition: { duration: 0.6, delay: index * 0.05 },
+});
+
 const ValueList = () => {
   return (
     <div className="relative w-full">
@@ -20,12 +26,7 @@ const ValueList = () => {
         <Title text="Our Values" />
 
         {values.map(({ name, image, alt, description }, index) => (
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6, delay: index * 0.05 }}
-            key={index}
-          >
+          <motion.div key={index} {...valueAnimation(index)}>
             <Value
               name={name}
               image={image}
@@ -36,14 +37,13 @@ const ValueList = () => {
         ))}
       </div>
 
-      <div className="w-full">
-        <Image
-          src={BottomWave}
-          alt="Decorative bottom wave"
-          className="w-full object-cover"
-        />
-      </div>
+      <Image
+        src={BottomWave}
+        alt="Decorative bottom wave"
+        className="w-full object-cover"
+      />
     </div>
   );
 };
+
 export default ValueList;

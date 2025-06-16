@@ -6,11 +6,15 @@ interface animationProp {
   index: number;
 }
 
+const galleryAnimation = {
+initial:{ y: 10, opacity: 0.1, scale: 0.8 },
+      whileInView:{ y: 0, opacity: 1, scale: 1 },
+};
+
 const Animation = ({ children, index }: animationProp) => {
   return (
     <motion.div
-      initial={{ y: 10, opacity: 0.1, scale: 0.8 }}
-      whileInView={{ y: 0, opacity: 1, scale: 1 }}
+      {...galleryAnimation}
       transition={{ duration: 0.7, delay: index * 0.2 }}
     >
       {children}
