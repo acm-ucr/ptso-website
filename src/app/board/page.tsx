@@ -8,7 +8,7 @@ import waves from "@/public/assets/board/boardWaves.svg";
 const Board = () => {
   return (
     <>
-<Header>Board</Header>
+      <Header>Board</Header>
       <CurrentBoard />
       <OldBoard />
       <Image src={waves} alt="Board Waves" className="w-full" />

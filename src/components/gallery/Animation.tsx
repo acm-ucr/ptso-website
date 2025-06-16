@@ -7,8 +7,8 @@ interface animationProp {
 }
 
 const galleryAnimation = {
-initial:{ y: 10, opacity: 0.1, scale: 0.8 },
-      whileInView:{ y: 0, opacity: 1, scale: 1 },
+  initial: { y: 10, opacity: 0.1, scale: 0.8 },
+  whileInView: { y: 0, opacity: 1, scale: 1 },
 };
 
 const Animation = ({ children, index }: animationProp) => {

@@ -43,7 +43,10 @@ const Landing = () => {
       <div className="bg-ptso-blue-primary relative z-10 flex flex-col items-center justify-center pt-10 text-center">
         <div className="flex flex-row gap-x-4 px-8 lg:gap-x-18">
           <div className="relative w-full">
-            <motion.div {...diamondAnimation1} className="absolute bottom-0 left-0 hidden md:flex">
+            <motion.div
+              {...diamondAnimation1}
+              className="absolute bottom-0 left-0 hidden md:flex"
+            >
               <Image src={whitediamond} alt="star3" />
             </motion.div>
 
@@ -56,7 +59,10 @@ const Landing = () => {
               <Image src={purplediamond} alt="star2" className="w-1/2" />
             </motion.div>
           </div>
-          <motion.div {...diamondAnimationShort} className="-mt-12 hidden pr-8 md:flex">
+          <motion.div
+            {...diamondAnimationShort}
+            className="-mt-12 hidden pr-8 md:flex"
+          >
             <Image src={purplediamond} alt="star" className="h-auto w-40" />
           </motion.div>
 
@@ -66,7 +72,12 @@ const Landing = () => {
               initial={{ opacity: 0, scale: 0.7, y: -20 }}
               whileInView={{ opacity: 1, scale: 1 }}
             >
-              <Image src={PTSOLogo} alt="PTSO logo" className="mb-6 h-auto w-full" priority />
+              <Image
+                src={PTSOLogo}
+                alt="PTSO logo"
+                className="mb-6 h-auto w-full"
+                priority
+              />
               <Image
                 src={PTSOLogoBackground}
                 alt="Background Aura"
@@ -88,7 +99,10 @@ const Landing = () => {
               <Image src={purplediamond} alt="star5" className="w-1/2" />
             </motion.div>
           </div>
-          <motion.div {...diamondAnimationShort} className="mt-24 hidden md:flex">
+          <motion.div
+            {...diamondAnimationShort}
+            className="mt-24 hidden md:flex"
+          >
             <Image src={purplediamond} alt="star4" className="h-auto w-50" />
           </motion.div>
         </div>

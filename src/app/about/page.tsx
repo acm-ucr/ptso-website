@@ -6,7 +6,7 @@ import TherapyTypes from "@/components/about/TherapyTypes";
 const About = () => {
   return (
     <>
-<Header>About</Header>
+      <Header>About</Header>
       <Mission />
       <ValueList />
       <TherapyTypes />

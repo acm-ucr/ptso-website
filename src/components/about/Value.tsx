@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 
-
 interface ValueProps {
   name: string;
   image: StaticImageData;
