@@ -60,21 +60,19 @@ const ContactUs = () => {
 
         <div className="relative flex flex-col md:flex-row">
           <div className="flex items-center justify-center md:w-1/2">
-            <div className="flex md:flex-col md:gap-6">
-              <motion.div
-                className="relative bottom-10 hidden md:block"
-                initial={contactUsTitleAnimation.initial}
-                whileInView={contactUsTitleAnimation.whileInView}
-                transition={contactUsTitleAnimation.transition}
-              >
-                <Title text="Contact Us" />
-                <Image
-                  src={contactUs}
-                  alt="Contact Us Hand"
-                  className="hidden w-5/6 md:block"
-                />
-              </motion.div>
-            </div>
+            <motion.div
+              className="relative bottom-10 hidden md:block"
+              initial={contactUsTitleAnimation.initial}
+              whileInView={contactUsTitleAnimation.whileInView}
+              transition={contactUsTitleAnimation.transition}
+            >
+              <Title text="Contact Us" />
+              <Image
+                src={contactUs}
+                alt="Contact Us Hand"
+                className="hidden w-5/6 md:block"
+              />
+            </motion.div>
           </div>
 
           <div className="relative m-10 flex justify-center">
