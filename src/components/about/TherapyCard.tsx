@@ -57,7 +57,7 @@ const TherapyCard = ({
             overflow: "hidden",
           }}
         >
-          <div className="relative w-1/4 sm:w-1/2 md:w-1/3">
+          <div className="relative hidden w-1/4 sm:block sm:w-1/2 md:w-1/3">
             <Image src={image} alt={alt} className="object-contain" />
           </div>
           <div className="md:text-md text-center font-serif text-sm text-white lg:text-lg">
