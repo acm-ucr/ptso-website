@@ -18,6 +18,7 @@ const navItemAnimation = {
   initial: { opacity: 0, y: -10 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.3 },
+  whileHover: { scale: 1.05 }
 };
 
 const Navbar = () => {
@@ -28,9 +29,11 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
+    
     <div className="text-ptso-purple-accent bg-ptso-blue-primary">
+      
       <div className="hidden items-center p-4 md:flex">
-        <motion.div {...navItemAnimation} whileHover={{ scale: 1.05 }}>
+        <motion.div {...navItemAnimation}>
           <Link href="/" className="mr-8 flex items-center">
             <Image src={ptsoLogo} alt="PTSO Logo" height={70} width={49} />
             <div className="px-4 text-3xl">PTSO</div>
@@ -46,7 +49,7 @@ const Navbar = () => {
                 ...navItemAnimation.transition,
                 delay: index * 0.1,
               }}
-              whileHover={{ scale: 1.05 }}
+            
             >
               <Link
                 href={link}
@@ -71,7 +74,7 @@ const Navbar = () => {
 
       <div className="md:hidden">
         <div className="flex items-center justify-between px-4 pt-4">
-          <motion.div {...navItemAnimation} whileHover={{ scale: 1.05 }}>
+          <motion.div {...navItemAnimation} >
             <Link href="/" onClick={closeMenu}>
               <Image
                 src={ptsoLogo}
@@ -130,14 +133,18 @@ const Navbar = () => {
               >
                 JOIN US
               </Link>
+              
             </motion.div>
+            
           </div>
+          
         </motion.div>
+       
       </div>
-
-      <div className="pt-4 md:pt-0">
+ <div className="pt-4 md:pt-0">
         <Divider />
       </div>
+      
     </div>
   );
 };

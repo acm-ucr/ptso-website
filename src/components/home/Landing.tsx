@@ -110,13 +110,11 @@ const Landing = () => {
         </div>
       </div>
 
-      <div>
         <Image
           src={border}
           alt="Header background bottom"
           className="border-ptso-blue-primary -mt-6 w-full border-t-16"
         />
-      </div>
     </div>
   );
 };

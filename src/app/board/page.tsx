@@ -7,13 +7,13 @@ import waves from "@/public/assets/board/boardWaves.svg";
 
 const Board = () => {
   return (
-    <div>
-      <Header title="Board" />
+    <>
+<Header>Board</Header>
       <CurrentBoard />
       <OldBoard />
       <Image src={waves} alt="Board Waves" className="w-full" />
       <Founders />
-    </div>
+    </>
   );
 };
 

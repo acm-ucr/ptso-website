@@ -3,10 +3,10 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 
 const Gallery = () => {
   return (
-    <div>
-      <Header title="Gallery" />
+    <>
+<Header>Gallery</Header>
       <GalleryGrid />
-    </div>
+    </>
   );
 };
 

@@ -45,8 +45,7 @@ const Redirect = ({ statusCode }: redirectProps) => {
           href="/"
           className="bg-ptso-purple-secondary z-10 inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-base text-white transition-all duration-300 ease-in-out hover:scale-105 sm:text-lg md:text-xl"
         >
-          Return home
-          <div className="text-base sm:text-lg md:text-xl"> →</div>
+          Return home →
         </Link>
       </motion.div>
 

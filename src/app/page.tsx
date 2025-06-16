@@ -6,13 +6,13 @@ import ContactUs from "@/components/home/ContactUs";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Landing />
       <Description />
       <OurValues />
       <Instagram />
       <ContactUs />
-    </div>
+    </>
   );
 };
 

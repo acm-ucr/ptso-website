@@ -5,12 +5,12 @@ import TherapyTypes from "@/components/about/TherapyTypes";
 
 const About = () => {
   return (
-    <div>
-      <Header title="About" />
+    <>
+<Header>About</Header>
       <Mission />
       <ValueList />
       <TherapyTypes />
-    </div>
+    </>
   );
 };
 

@@ -108,7 +108,7 @@ const ContactUs = () => {
                     name="entry.686315706"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-6"
                     required
-                  ></textarea>
+                  />
                   <motion.div whileHover={{ scale: 1.05 }}>
                     <div className="flex justify-center p-3">
                       <button className="bg-ptso-blue-dark hover:bg-ptso-blue-dark/90 w-1/3 cursor-pointer rounded-2xl p-3 text-white">
