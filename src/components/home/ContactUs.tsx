@@ -103,7 +103,7 @@ const ContactUs = () => {
                     Name
                   </div>
                   <input
-                    name="entry.678487467"
+                    name="enpm7"
                     type="text"
                     placeholder="Name"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-3"
