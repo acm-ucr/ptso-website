@@ -43,8 +43,8 @@ const TherapyCard = ({
             zIndex: flipped ? 1 : 2,
           }}
         >
-          <div className="relative w-1/3">
-            <Image src={image} alt={alt} className="object-contain" />
+          <div className="relative mx-auto w-1/3">
+            <Image src={image} alt={alt} className="mx-auto" />
           </div>
           <div className="font-beVietnamPro text-center text-2xl text-white sm:text-2xl lg:text-4xl">
             {name}
@@ -61,7 +61,7 @@ const TherapyCard = ({
           }}
         >
           <div className="relative hidden sm:block sm:w-1/3 md:w-1/4">
-            <Image src={image} alt={alt} className="object-contain" />
+            <Image src={image} alt={alt} />
           </div>
           <div className="md:text-md text-center font-serif text-sm text-white lg:text-lg">
             {description}

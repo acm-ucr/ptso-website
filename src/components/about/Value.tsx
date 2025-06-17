@@ -14,7 +14,7 @@ const Value = ({ name, image, alt, description }: ValueProps) => {
         <Image src={image} alt={alt} className="w-1/10" />
 
         <div className="flex-col space-y-5 md:w-6/7 xl:w-9/10">
-          <div className="font-quicksand text-ptso-purple-accent text-lg font-semibold lg:text-xl">
+          <div className="font-quicksand text-ptso-purple-accent font-semibold md:text-2xl lg:text-3xl">
             {name}
           </div>
           <div className="font-quicksand text-ptso-purple-accent md:text-lg lg:text-xl">
@@ -26,7 +26,7 @@ const Value = ({ name, image, alt, description }: ValueProps) => {
         <div className="flex gap-6">
           <Image src={image} alt={alt} className="w-1/11" />
 
-          <div className="font-quicksand text-ptso-purple-accent pt-2 text-xl font-semibold sm:text-2xl">
+          <div className="font-quicksand text-ptso-purple-accent pt-2 text-lg font-semibold sm:text-xl">
             {name}
           </div>
         </div>
