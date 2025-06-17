@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, Transition } from "motion/react";
+import { motion } from "motion/react";
 
 import rectangle1 from "@/public/assets/not-found/rectangle1.svg";
 import rectangle2 from "@/public/assets/not-found/rectangle2.svg";
@@ -15,7 +15,7 @@ interface redirectProps {
 const fadeIn = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
-  transition: { duration: 1 } as Transition,
+  transition: { duration: 1 },
 };
 
 const Redirect = ({ statusCode }: redirectProps) => {
