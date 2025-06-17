@@ -2,7 +2,7 @@
 import Image from "next/image";
 import PTSOLogo from "@/public/ptsoLogoLarge.webp";
 import PTSOLogoBackground from "@/public/assets/home/ptsoLogoBackground.svg";
-import border from "@/public/assets/home/background/landing.svg";
+import border from "@/public/assets/header/background.svg";
 import purplediamond from "@/public/assets/home/shapes/purpleDiamond.svg";
 import whitediamond from "@/public/assets/home/shapes/whiteDiamond.svg";
 import { motion } from "motion/react";
@@ -114,7 +114,7 @@ const Landing = () => {
         <Image
           src={border}
           alt="Header background bottom"
-          className="border-ptso-blue-primary -mt-6 w-full border-t-16"
+          className="border-ptso-blue-primary -mt-1 w-full border-t-16"
         />
       </div>
     </div>
