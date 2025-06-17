@@ -22,9 +22,3 @@
   --font-quicksand: "Quicksand";
   --font-average: "Average";
 }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
