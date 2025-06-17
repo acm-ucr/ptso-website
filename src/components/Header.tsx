@@ -15,7 +15,7 @@ const Header = ({ children }: HeaderProps) => {
       <Image
         src={background}
         alt="Header background top"
-        className="border-ptso-blue-primary w-full"
+        className="border-ptso-blue-primary block w-full"
       />
     </>
   );

@@ -125,7 +125,7 @@ const Landing = () => {
         <Image
           src={border}
           alt="Header background bottom"
-          className="border-ptso-blue-primary -mt-1 w-full border-t-16"
+          className="border-ptso-blue-primary -mt-1 block w-full border-t-16"
         />
       </div>
     </div>
