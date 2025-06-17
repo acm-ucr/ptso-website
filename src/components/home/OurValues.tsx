@@ -20,7 +20,7 @@ const OurValues = () => {
       <Image
         src={background}
         alt="Background"
-        className="-z-10 h-[50vh] w-full object-cover md:h-[65vh] lg:h-auto"
+        className="-z-10 h-140 w-full object-cover md:h-180 lg:h-auto"
       />
       <div className="absolute top-8 m-5 items-center sm:top-15 md:top-28 md:m-8 md:flex md:justify-between lg:top-32 xl:top-40 xl:m-12">
         <div className="mb-8 md:mx-auto md:w-3/4 lg:-mt-8 lg:w-2/3 xl:w-1/2">
