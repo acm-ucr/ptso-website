@@ -79,7 +79,11 @@ const Instagram = () => {
         </div>
       </div>
       <div className="-mt-1 w-full">
-        <Image src={instaBottomWave} alt="Instagram Bottom Wave" />
+        <Image
+          src={instaBottomWave}
+          alt="Instagram Bottom Wave"
+          className="block w-full"
+        />
       </div>
     </>
   );
