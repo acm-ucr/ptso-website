@@ -15,6 +15,18 @@ import Title from "@/components/Title";
 import toast from "react-hot-toast";
 import { motion } from "motion/react";
 
+const contactUsTitleAnimation = {
+  initial: { opacity: 0, y: -20 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, delay: 0.3 },
+};
+
+const formAnimation = {
+  initial: { scale: 0.9, opacity: 0, y: 0, x: 10 },
+  whileInView: { scale: 1, opacity: 1 },
+  transition: { duration: 0.6, delay: 0.3 },
+};
+
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -48,21 +60,19 @@ const ContactUs = () => {
 
         <div className="relative flex flex-col md:flex-row">
           <div className="flex items-center justify-center md:w-1/2">
-            <div className="flex md:flex-col md:gap-6">
-              <motion.div
-                className="relative bottom-10 hidden md:block"
-                initial={{ opacity: 0, y: -20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
-                <Title text="Contact Us" />
-                <Image
-                  src={contactUs}
-                  alt="Contact Us Hand"
-                  className="hidden w-5/6 md:block"
-                />
-              </motion.div>
-            </div>
+            <motion.div
+              className="relative bottom-10 hidden md:block"
+              initial={contactUsTitleAnimation.initial}
+              whileInView={contactUsTitleAnimation.whileInView}
+              transition={contactUsTitleAnimation.transition}
+            >
+              <Title text="Contact Us" />
+              <Image
+                src={contactUs}
+                alt="Contact Us Hand"
+                className="hidden w-5/6 md:block"
+              />
+            </motion.div>
           </div>
 
           <div className="relative m-10 flex justify-center">
@@ -74,9 +84,9 @@ const ContactUs = () => {
 
             <motion.div
               className="bg-ptso-blue-light border-ptso-blue-accent w-full rounded-4xl border-3 p-8 md:absolute md:w-5/6"
-              initial={{ scale: 0.9, opacity: 0, y: 0, x: 10 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              initial={formAnimation.initial}
+              whileInView={formAnimation.whileInView}
+              transition={formAnimation.transition}
             >
               {isSubmitted ? (
                 <div className="font-average flex flex-col items-center text-center text-xl sm:text-2xl">
@@ -118,7 +128,7 @@ const ContactUs = () => {
                     name="entry.686315706"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-6"
                     required
-                  ></textarea>
+                  />
                   <motion.div whileHover={{ scale: 1.05 }}>
                     <div className="flex justify-center p-3">
                       <button className="bg-ptso-blue-dark hover:bg-ptso-blue-dark/90 w-1/3 cursor-pointer rounded-2xl p-3 text-white">

@@ -3,22 +3,27 @@ import Image from "next/image";
 import GroupPhoto from "@/public/assets/about/therapyAbout.webp";
 import { motion } from "motion/react";
 
+const imageAnimation = {
+  initial: { scale: 0.9, opacity: 0 },
+  whileInView: { scale: 1, opacity: 1 },
+  transition: { duration: 0.7 },
+};
+
+const textAnimation = {
+  initial: { scale: 0.9, opacity: 0, x: -20 },
+  whileInView: { scale: 1, opacity: 1, x: 0 },
+  transition: { duration: 0.6, delay: 0.2 },
+};
+
 const Mission = () => {
   return (
     <div className="m-8 flex flex-col items-center justify-around gap-3 md:flex-row">
-      <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        className="md:w-2/5"
-      >
+      <motion.div {...imageAnimation} className="md:w-2/5">
         <Image src={GroupPhoto} alt="Group Photo" className="md:w-full" />
       </motion.div>
 
       <motion.div
-        initial={{ scale: 0.9, opacity: 0, x: -20 }}
-        whileInView={{ scale: 1, opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        {...textAnimation}
         className="text-ptso-purple-accent font-quicksand text-center text-lg sm:text-xl md:w-2/5 md:text-2xl"
       >
         <p>
@@ -33,4 +38,5 @@ const Mission = () => {
     </div>
   );
 };
+
 export default Mission;

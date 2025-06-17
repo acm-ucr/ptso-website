@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
 
@@ -11,6 +10,13 @@ interface TherapyCardProps {
   alt: string;
   color: string;
 }
+
+const cardAnimation = {
+  initial: { opacity: 0, y: -30, scale: 0.5 },
+  whileInView: { opacity: 1, y: 0, scale: 1 },
+  whileHover: { scale: 1.04 },
+  transition: { duration: 0.4 },
+};
 
 const TherapyCard = ({
   image,
@@ -24,10 +30,7 @@ const TherapyCard = ({
   return (
     <div className="aspect-5/6 w-full cursor-pointer p-1 lg:p-2">
       <motion.div
-        initial={{ opacity: 0, y: -30, scale: 0.5 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        whileHover={{ scale: 1.04 }}
-        transition={{ duration: 0.4 }}
+        {...cardAnimation}
         animate={{ rotateY: flipped ? 180 : 0 }}
         onClick={() => setFlipped((prevState) => !prevState)}
         style={{ transformStyle: "preserve-3d" }}

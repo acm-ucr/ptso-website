@@ -4,14 +4,28 @@ import { founders } from "@/data/Founders";
 import Title from "@/components/Title";
 import { motion } from "motion/react";
 
+const titleAnimation = {
+  initial: { opacity: 0, x: -20 },
+  whileInView: { x: 0, opacity: 1 },
+  transition: { duration: 0.7 },
+};
+
+const founderAnimation = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { y: 0, opacity: 1 },
+  transition: { duration: 0.7 },
+};
+
+const paragraphAnimation = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { y: 0, opacity: 1 },
+  transition: { duration: 0.7 },
+};
+
 const Founders = () => {
   return (
     <div className="bg-ptso-pink-light flex flex-col items-center pb-8">
-      <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-      >
+      <motion.div {...titleAnimation}>
         <Title text="Our Founders" />
       </motion.div>
       <div className="w-2/3 justify-center sm:flex">
@@ -19,9 +33,7 @@ const Founders = () => {
           <motion.div
             className="m-6 flex-col text-center text-lg sm:text-xl md:text-2xl"
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7 }}
+            {...founderAnimation}
           >
             <Image
               src={image}
@@ -36,9 +48,7 @@ const Founders = () => {
       </div>
       <motion.div
         className="font-quicksand w-4/5 text-center text-base sm:text-lg md:text-xl"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        {...paragraphAnimation}
       >
         When we founded the Pre-Therapy Student Organization (PTSO), we wanted
         to create something more than just a club—we wanted a community. As
