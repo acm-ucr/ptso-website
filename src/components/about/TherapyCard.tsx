@@ -26,8 +26,8 @@ const TherapyCard = ({
       <motion.div
         initial={{ opacity: 0, y: -30, scale: 0.5 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.7 }}
+        whileHover={{ scale: 1.04 }}
+        transition={{ duration: 0.4 }}
         animate={{ rotateY: flipped ? 180 : 0 }}
         onClick={() => setFlipped((prevState) => !prevState)}
         style={{ transformStyle: "preserve-3d" }}
@@ -57,7 +57,7 @@ const TherapyCard = ({
             overflow: "hidden",
           }}
         >
-          <div className="relative hidden w-1/4 sm:block sm:w-1/2 md:w-1/3">
+          <div className="relative hidden sm:block sm:w-1/3 md:w-1/4">
             <Image src={image} alt={alt} className="object-contain" />
           </div>
           <div className="md:text-md text-center font-serif text-sm text-white lg:text-lg">
