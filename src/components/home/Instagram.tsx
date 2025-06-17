@@ -78,11 +78,11 @@ const Instagram = () => {
           </motion.div>
         </div>
       </div>
-      <div className="-mt-1 w-full">
+      <div className="-mt-1 w-full overflow-x-hidden">
         <Image
           src={instaBottomWave}
           alt="Instagram Bottom Wave"
-          className="block w-full"
+          className="-ml-[1vw] block w-[102vw] max-w-none"
         />
       </div>
     </>
