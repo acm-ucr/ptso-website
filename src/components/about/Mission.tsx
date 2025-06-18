@@ -24,7 +24,7 @@ const Mission = () => {
 
       <motion.div
         {...textAnimation}
-        className="text-ptso-purple-accent font-quicksand text-center text-lg sm:text-xl md:w-2/5 md:text-2xl"
+        className="text-ptso-purple-accent font-quicksand text-center text-lg sm:text-xl md:w-2/5 lg:text-2xl"
       >
         <p>
           At PTSO, we are dedicated to fostering a supportive and inclusive
