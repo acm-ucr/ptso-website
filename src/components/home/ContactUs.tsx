@@ -54,7 +54,7 @@ const ContactUs = () => {
         alt="Contact Us Top Wave"
       />
       <div className="bg-ptso-blue-primary -mt-1 py-8">
-        <div className="block md:hidden">
+        <div className="block pb-2 md:hidden">
           <Title text="Contact Us" />
         </div>
 
@@ -75,7 +75,7 @@ const ContactUs = () => {
             </motion.div>
           </div>
 
-          <div className="relative m-10 flex justify-center">
+          <div className="relative mr-8 ml-4 flex justify-center">
             <Image
               src={vector6}
               alt="Contact Us Blob"
@@ -130,7 +130,7 @@ const ContactUs = () => {
                     required
                   />
                   <motion.div whileHover={{ scale: 1.05 }}>
-                    <div className="flex justify-center p-3">
+                    <div className="flex justify-center sm:p-3">
                       <button className="bg-ptso-blue-dark hover:bg-ptso-blue-dark/90 w-1/3 cursor-pointer rounded-2xl p-3 text-white">
                         Submit
                       </button>
