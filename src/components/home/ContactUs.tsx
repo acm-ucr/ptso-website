@@ -75,7 +75,7 @@ const ContactUs = () => {
             </motion.div>
           </div>
 
-          <div className="relative mr-8 ml-4 flex justify-center">
+          <div className="relative mt-12 mr-8 ml-4 flex justify-center">
             <Image
               src={vector6}
               alt="Contact Us Blob"
