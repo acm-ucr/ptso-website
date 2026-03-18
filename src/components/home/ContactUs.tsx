@@ -99,9 +99,9 @@ const ContactUs = () => {
                   onSubmit={() => (window.submitted = true)}
                   target="hidden_iframe"
                 >
-                  <div className="font-quicksand block text-2xl font-bold">
+                  <h3 className="font-quicksand block text-2xl font-bold">
                     Name
-                  </div>
+                  </h3>
                   <input
                     name="entry.678487467"
                     type="text"
@@ -110,9 +110,9 @@ const ContactUs = () => {
                     required
                   />
 
-                  <div className="font-quicksand mt-4 block text-2xl font-bold">
+                  <h3 className="font-quicksand mt-4 block text-2xl font-bold">
                     Email
-                  </div>
+                  </h3>
                   <input
                     name="entry.2011894593"
                     type="email"
@@ -121,9 +121,9 @@ const ContactUs = () => {
                     required
                   />
 
-                  <div className="font-quicksand mt-4 block text-2xl font-bold">
+                  <h3 className="font-quicksand mt-4 block text-2xl font-bold">
                     Message
-                  </div>
+                  </h3>
                   <textarea
                     name="entry.686315706"
                     className="border-ptso-gray-primary mt-2 w-full rounded-3xl border-1 bg-white p-6"
