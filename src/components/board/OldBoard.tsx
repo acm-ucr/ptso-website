@@ -13,15 +13,19 @@ const containerAnimation = {
 const OldBoard = () => {
   return (
     <div className="mt-8 flex flex-col items-center md:mt-12">
-      <Year text="'23-'24" />
-      <motion.div
-        className="flex flex-wrap justify-center px-4 md:w-4/5 md:px-8 md:py-2"
-        {...containerAnimation}
-      >
-        {members.map(({ name, position }, index) => (
-          <BoardMember name={name} position={position} key={index} />
-        ))}
-      </motion.div>
+      {members.map(({ year, board }, index) => (
+        <div className="flex flex-col items-center" key={index}>
+          <Year text={year} />
+          <motion.div
+            className="flex flex-wrap justify-center px-4 md:w-4/5 md:px-8 md:py-2"
+            {...containerAnimation}
+          >
+            {board.map(({ name, position }, index) => (
+              <BoardMember name={name} position={position} key={index} />
+            ))}
+          </motion.div>
+        </div>
+      ))}
     </div>
   );
 };

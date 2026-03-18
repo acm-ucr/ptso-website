@@ -9,7 +9,7 @@ const descriptionAnimation = {
 
 const Description = () => {
   return (
-    <motion.div
+    <motion.p
       {...descriptionAnimation}
       className="text-ptso-purple-accent font-quicksand mx-auto h-auto w-5/6 text-center text-base sm:text-xl md:text-2xl"
     >
@@ -22,7 +22,7 @@ const Description = () => {
       well-being of others, we strive to create a space where future therapists
       across different fields can access valuable resources and contribute to a
       collaborative, supportive environment.
-    </motion.div>
+    </motion.p>
   );
 };
 

@@ -27,7 +27,7 @@ const OurValuesText = () => {
         <Image src={valueStarGroup} alt="Stars" width={50} className="z-5" />
         <Title text="Our Values" />
       </motion.div>
-      <motion.div
+      <motion.p
         {...textAnimation}
         className="font-quicksand mt-3 max-w-6xl px-4 text-center text-sm sm:px-6 sm:text-base md:w-full md:px-8 md:text-left md:text-xl"
       >
@@ -37,7 +37,7 @@ const OurValuesText = () => {
         center on advocacy, integrity, and empowerment, ensuring that every
         member has the resources and opportunities to succeed in their journey
         toward helping others.
-      </motion.div>
+      </motion.p>
     </>
   );
 };
