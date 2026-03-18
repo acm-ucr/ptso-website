@@ -4,13 +4,13 @@ interface titleProps {
 
 const Title = ({ text }: titleProps) => {
   return (
-    <div
+    <h2
       className={
         "text-ptso-pink-accent font-beVietnamPro text-center text-3xl font-bold md:text-4xl"
       }
     >
       {text}
-    </div>
+    </h2>
   );
 };
 
