@@ -3,7 +3,7 @@ import BoardMember from "@/components/board/BoardMember";
 import Year from "@/components/Year";
 import Image from "next/image";
 
-import currBoard from "@/public/assets/board/PTSOBoard.png";
+import currBoard from "@/public/assets/board/PTSOBoard.webp";
 
 import { members } from "@/data/CurrentBoard";
 import { motion } from "motion/react";
