@@ -42,11 +42,11 @@ const Founders = () => {
               height={300}
               className="mb-2 w-full px-8"
             />
-            {name}
+            <h3>{name}</h3>
           </motion.div>
         ))}
       </div>
-      <motion.div
+      <motion.p
         className="font-quicksand w-4/5 text-center text-base sm:text-lg md:text-xl"
         {...paragraphAnimation}
       >
@@ -61,7 +61,7 @@ const Founders = () => {
         speakers, and volunteer experiences, we have worked to make PTSO a place
         where aspiring therapists can find guidance, encouragement, and a sense
         of belonging.
-      </motion.div>
+      </motion.p>
     </div>
   );
 };

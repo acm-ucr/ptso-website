@@ -13,12 +13,12 @@ const fadeInFromLeft = {
 
 const Year = ({ text }: yearProps) => {
   return (
-    <motion.div
+    <motion.h2
       {...fadeInFromLeft}
       className="text-ptso-pink-accent font-beVietnamPro mx-auto mb-2 w-7/10 text-2xl font-bold md:mb-4 md:text-3xl"
     >
       {text}
-    </motion.div>
+    </motion.h2>
   );
 };
 

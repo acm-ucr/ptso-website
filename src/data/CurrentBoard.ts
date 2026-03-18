@@ -9,27 +9,31 @@ export const members: member[] = [
     position: "President",
   },
   {
-    name: "Natalie Hwang",
+    name: "Montserrat Ramirez",
     position: "Vice President",
   },
   {
-    name: "Montserrat Ramirez",
+    name: "Victoria Gudino",
     position: "Vice President Intern",
   },
   {
-    name: "Vallery Ayala",
+    name: "Laney Wang",
     position: "Secretary",
   },
   {
-    name: "Andrew Bach",
+    name: "Avishi Singh",
     position: "Treasurer",
   },
   {
-    name: "Sage Kuck",
-    position: "Director of Activities",
+    name: "Nick Swee",
+    position: "Co-Director of Activities",
   },
   {
-    name: "Dora Nguyen",
+    name: "Riddhi Parsekar",
+    position: "Co-Director of Activities",
+  },
+  {
+    name: "Ramon Cabral",
     position: "Co-Director of Outreach",
   },
   {
@@ -37,15 +41,11 @@ export const members: member[] = [
     position: "Co-Director of Outreach",
   },
   {
-    name: "Celena Fu",
-    position: "Co-Director of Outreach",
-  },
-  {
-    name: "Abigail Hinojales",
+    name: "Haya Salahieh",
     position: "Co-Director of Publicity",
   },
   {
-    name: "Erica Jwa",
+    name: "Jasmine Pascasio",
     position: "Co-Director of Publicity",
   },
 ];

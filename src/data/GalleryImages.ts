@@ -5,6 +5,12 @@ interface picturesData {
   alt: string;
   description: string;
 }
+import grid16 from "@/public/assets/gallery/Art_Therapist_Sylvia_Rodriguez.webp";
+import grid17 from "@/public/assets/gallery/Board_Interest_Info_Meeting_2025.webp";
+import grid18 from "@/public/assets/gallery/Fall_2025_Wednesday_Tabling.webp";
+import grid19 from "@/public/assets/gallery/Occupational_Therapist_CEO_Harsha_Rana.webp";
+import grid20 from "@/public/assets/gallery/webp Folake_Yusuf.webp";
+import grid21 from "@/public/assets/gallery/Winter_2026_PT_Appilcation_Process.webp";
 import grid0 from "@/public/assets/gallery/mftApplication.webp";
 import grid1 from "@/public/assets/gallery/bestBuddiesCollab.webp";
 import grid2 from "@/public/assets/gallery/bestBuddiesAirplane.webp";
@@ -105,5 +111,36 @@ export const picturesData: picturesData[] = [
     pictures: grid15,
     alt: "bingoWinners",
     description: "Bingo Winners",
+  },
+  {
+    pictures: grid20,
+    alt: "Radiation Therapist Guest Speaker 2025 Folake Yusuf",
+    description: "Radiation Therapist Guest Speaker 2025 Folake Yusuf",
+  },
+  {
+    pictures: grid18,
+    alt: "Fall 2025 Tabling",
+    description: "Fall 2025 Tabling",
+  },
+  {
+    pictures: grid19,
+    alt: "Occupational Therapist & CEO Harsha Rana",
+    description: "Occupational Therapist & CEO Harsha Rana",
+  },
+  {
+    pictures: grid16,
+    alt: "Art Therapist Sylvia Rodriguez",
+    description: "Art Therapist Sylvia Rodriguez Presentation",
+  },
+
+  {
+    pictures: grid21,
+    alt: "Winter 2026 PT Application Process",
+    description: "Winter 2026 PT Application Process",
+  },
+  {
+    pictures: grid17,
+    alt: "Board Interest Meeting",
+    description: "Board Interest Meeting",
   },
 ];

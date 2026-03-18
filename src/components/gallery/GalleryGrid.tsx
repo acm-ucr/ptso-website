@@ -6,6 +6,52 @@ import Animation from "@/components/gallery/Animation";
 const GalleryGrid = () => {
   return (
     <div className="mx-auto mt-10 mb-10 flex w-11/12 flex-col items-center sm:gap-4">
+      <div className="h-fit w-full grid-cols-4 gap-4 sm:grid">
+        <div className="col-span-1 grid h-full w-full gap-4">
+          <Animation index={1.5}>
+            <ImageCard
+              image={picturesData[20].pictures}
+              alt={picturesData[20].alt}
+              description={picturesData[20].description}
+            />
+          </Animation>
+        </div>
+        <div className="col-span-1 grid h-full w-full grid-cols-1 sm:gap-4">
+          {picturesData
+            .slice(18, 20)
+            .map(({ pictures, alt, description }, index) => (
+              <Animation index={index} key={index}>
+                <ImageCard
+                  image={pictures}
+                  alt={alt}
+                  description={description}
+                />
+              </Animation>
+            ))}
+        </div>
+        <div className="col-span-1 grid h-full w-full grid-cols-1 sm:gap-4">
+          {picturesData
+            .slice(16, 18)
+            .map(({ pictures, alt, description }, index) => (
+              <Animation index={index} key={index}>
+                <ImageCard
+                  image={pictures}
+                  alt={alt}
+                  description={description}
+                />
+              </Animation>
+            ))}
+        </div>
+        <div className="col-span-1 row-span-1 grid h-full w-full gap-4">
+          <Animation index={1.5}>
+            <ImageCard
+              image={picturesData[21].pictures}
+              alt={picturesData[21].alt}
+              description={picturesData[21].description}
+            />
+          </Animation>
+        </div>
+      </div>
       <div className="h-full w-full grid-cols-3 gap-4 sm:grid">
         {picturesData
           .slice(0, 3)

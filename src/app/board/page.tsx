@@ -8,6 +8,7 @@ import waves from "@/public/assets/board/boardWaves.svg";
 const Board = () => {
   return (
     <>
+      <title>UCR PTSO - Board</title>
       <Header>Board</Header>
       <CurrentBoard />
       <OldBoard />

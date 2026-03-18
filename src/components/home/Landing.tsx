@@ -108,16 +108,16 @@ const Landing = () => {
         </div>
 
         <div className="text-ptso-navy font-beVietnamPro text-3xl leading-tight font-bold md:text-5xl">
-          <motion.div {...titleAnimationDown}>
+          <motion.h1 {...titleAnimationDown}>
             Pre-Therapy
             <br />
             Student Organization
-          </motion.div>
+          </motion.h1>
         </div>
         <div className="text-ptso-navy font-beVietnamPro mt-4 text-lg md:text-xl">
-          <motion.div {...titleAnimationUp}>
+          <motion.h2 {...titleAnimationUp}>
             UCR Student Organization est. 2024
-          </motion.div>
+          </motion.h2>
         </div>
       </div>
 
