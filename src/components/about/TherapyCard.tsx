@@ -46,9 +46,9 @@ const TherapyCard = ({
           <div className="relative mx-auto w-1/3">
             <Image src={image} alt={alt} className="mx-auto" />
           </div>
-          <div className="font-beVietnamPro text-center text-2xl text-white sm:text-2xl lg:text-4xl">
+          <h2 className="font-beVietnamPro text-center text-2xl text-white sm:text-2xl lg:text-4xl">
             {name}
-          </div>
+          </h2>
         </div>
 
         <div
@@ -63,9 +63,9 @@ const TherapyCard = ({
           <div className="relative hidden sm:block sm:w-1/3 md:w-1/4">
             <Image src={image} alt={alt} />
           </div>
-          <div className="md:text-md text-center font-serif text-sm text-white lg:text-lg">
+          <p className="md:text-md text-center font-serif text-sm text-white lg:text-lg">
             {description}
-          </div>
+          </p>
         </div>
       </motion.div>
     </div>
