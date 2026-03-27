@@ -40,7 +40,7 @@ const BoardCard = ({ year, image, position, members }: BoardCardProps) => {
             <Image
               src={image}
               alt="Image of current board"
-              className="border-ptso-blue-light mx-auto h-auto w-2/3 rounded-lg border-3"
+              className="border-ptso-blue-secondary mx-auto h-auto w-2/3 rounded-2xl border-3"
             />
           </motion.div>
 
