@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import Board24_25 from "@/public/assets/board/24-25_Board.jpg";
+import Board24_25 from "@/public/assets/board/24-25_Board.webp";
 import Board25_26 from "@/public/assets/board/25-26_Board.webp";
 
 interface board {
